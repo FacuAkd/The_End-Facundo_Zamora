@@ -9,44 +9,26 @@
 #body{
     background-image: url("../imagen/fondo2.jpg");
     background-attachment: fixed;
-    font-family: sans-serif;
+    font-family: 'Calligraffitti', cursive;
     color: white;
     }
-    #menu{
+    
+    .menu{
         background-image: url("../imagen/fondo2.jpg");
-        margin: auto;
-        padding: 2px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;  
-        align-items: center; 
-        position:fixed;
-
     }
-        #menu .menu__imagen img{
-            padding-top: 2px;
-            padding-right: 10px;
-            height: 70px;
-        }
-            #menu .menu__imagen img:hover{
-                animation: heartBeat 1500ms ease-in 50ms;
-            }
-                #menu ul{
-                    font-size: 20px;
-                    display: flex;
-                    list-style: none;
-                }
-                    #menu ul li a{
-                        margin: 0 15px;
-                        padding: 30px;
-                        color: white;
-                    }
-                        #menu ul li:hover{
-                            animation: pulse 1200ms ease-in 50ms;                        
-                        }
-                            #menu ul li a:hover{
-                                background: linear-gradient(violet,skyblue);
-                            }
+
+    .gradientes{
+        font-family: 'Calligraffitti', cursive;
+        font-size: 25px;
+        background: -webkit-linear-gradient(violet,skyblue);
+        background-clip:none;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .gradientes:hover{
+        animation: bounce 2s ease-in .2ms;
+    }
     #proposito{
         padding-top: 80px;
         padding-left: 10%;    
@@ -129,7 +111,7 @@
                         width: 350px;
                         padding: 5px auto;
                         border: solid 2px white;
-                        font-family: sans-serif;
+                        font-family: 'Calligraffitti', cursive;
                         color: white;
                         border-radius:10px;
                         font-size: 14px;
@@ -140,7 +122,7 @@
                             width: 350px;
                             padding: 5px auto;
                             border: solid 2px white;
-                            font-family: sans-serif;
+                            font-family: 'Calligraffitti', cursive;
                             color: white;
                             border-radius:10px;
                         }
@@ -150,7 +132,7 @@
                                 width: 50px;
                                 border: solid 2px white;
                                 padding: 5px auto;
-                                font-family: sans-serif;
+                                font-family: 'Calligraffitti', cursive;
                                 color: white;
                                 border-radius:10px;
                             }
@@ -176,12 +158,13 @@
             animation-duration: 1s;
         }
     #piePagina{
-        width:600px;
+        width:100%;
         margin: 0px auto;
         padding: 0px auto;
         padding-top: 15px;
         padding-bottom: 15px;
         font-size: 20px;
+        font-family: 'Coming Soon', cursive;
         text-align: center;  
         background: -webkit-linear-gradient(violet,skyblue);
         background-clip:none;
@@ -190,7 +173,7 @@
     }
         #piePagina:hover{
             animation: zoomIn 2s ease-in .2ms;
-            width: 900px;
+            width: 75%;
             font-size: 30px;
         }
     .disco{
@@ -203,7 +186,7 @@
         overflow: visible;
     }  
         .disco__texto{
-            font-family: sans-serif;
+            font-family: 'Calligraffitti', cursive;
             font-size: 35px;
             text-align: center;
             color: white;
