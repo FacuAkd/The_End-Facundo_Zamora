@@ -30,7 +30,7 @@
         animation: bounce 2s ease-in .2ms;
     }
     #proposito{
-        padding-top: 80px;
+        padding-top: 90px;
         padding-left: 10%;    
         padding-right: 10%;    
     }
@@ -43,14 +43,14 @@
             -webkit-text-fill-color: transparent;
         }
             .proposito__texto{
-                padding-top: 20px;
-                padding-bottom: 30px;
+                padding-top: 5px;
+                padding-bottom: 15px;
                 text-align: center; 
                 line-height: 1.5;
                 font-size: 35px;
             }
     #introduccion{
-        padding-top: 10px;
+        padding-top: 5px;
         padding-left: 10%;    
         padding-right: 10%; 
     }
@@ -64,7 +64,7 @@
             -webkit-text-fill-color: transparent;  
         }
             #introduccion .introduccion__texto {
-                padding-top: 20px;
+                padding-top: 5px;
                 padding-bottom: 30px;
                 text-align: center;
                 line-height: 1.5;
@@ -84,69 +84,7 @@
         line-height: 1.5;
         font-size: 35px;
     }
-   #formulario{
-        width:350px;
-        margin:15px 8% ;
-        padding:3px 17px 3px 17px;
-        border: double 4px white;
-        border-radius:10px;
-        overflow: hidden;
-        display: inline-block;
-    }
-       #formulario .formulario__leyenda{
-            text-align: center;
-            font-size: 16px;
-            padding-top:5px;
-            padding-bottom: 5px;
-       }
-            #nombre,#apellido,#edad,#pais,#email{
-                text-align: center;
-            }
-                #nombre,#apellido,#edad,#pais,#email:hover{
-                    text-align: center;
-                }
-                    #nombre,#edad,#apellido,#pais,#email{
-                        background-color: black;
-                        margin: 10px auto ;
-                        width: 350px;
-                        padding: 5px auto;
-                        border: solid 2px white;
-                        font-family: 'Calligraffitti', cursive;
-                        color: white;
-                        border-radius:10px;
-                        font-size: 14px;
-                    }
-                        #formulario textarea{
-                            background-color: black;
-                            margin: 10px auto ;
-                            width: 350px;
-                            padding: 5px auto;
-                            border: solid 2px white;
-                            font-family: 'Calligraffitti', cursive;
-                            color: white;
-                            border-radius:10px;
-                        }
-                            #formulario input[type="submit"]{
-                                background-color: black;
-                                margin: 10px 5px ;
-                                width: 50px;
-                                border: solid 2px white;
-                                padding: 5px auto;
-                                font-family: 'Calligraffitti', cursive;
-                                color: white;
-                                border-radius:10px;
-                            }
-    #collage{
-        width: 350px;
-        height: 397px;
-        display: inline-block;
-    }
-        #collage img{
-            width: 350px;
-            height:400px;   
-            margin:15px 55% ;
-            border: double 4px white;
-        }
+    
     #redes{
         margin-top: 30px;
         margin-bottom: 30px;
@@ -173,7 +111,6 @@
     }
         #piePagina:hover{
             animation: zoomIn 2s ease-in .2ms;
-            width: 75%;
             font-size: 30px;
         }
     .disco{
@@ -230,6 +167,10 @@
         .imagen-beatles:hover{
             animation: pulse;
             animation-duration: 1s;
+        }
+
+        .ventana{
+            width: 60%;
         }
 
 @media (min-width: 424px) and (max-width: 768px) {
@@ -339,6 +280,12 @@
     }
         .disco__texto{
         display: none;
+        }
+
+        #piePagina:hover{
+            animation: zoomIn 2s ease-in .2ms;
+            width: 75%;
+            font-size: 30px;
         }
 }
 
