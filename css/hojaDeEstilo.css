@@ -106,21 +106,7 @@
             animation: zoomIn 2s ease-in .2ms;
             font-size: 30px;
         }
-    .disco{
-        margin: 10px 80px;
-        padding:3px 17px 3px 17px;
-        display: flex; 
-        justify-content: space-evenly;
-        border: double 4px white;
-        border-radius:10px;
-        overflow: visible;
-    }  
-        .disco__texto{
-            font-family: 'Calligraffitti', cursive;
-            font-size: 35px;
-            text-align: center;
-            color: white;
-        }
+
     .pelicula {
         width: 500px;
         margin: 15px auto;
@@ -143,24 +129,6 @@
         width: 500px;
         margin: 15px auto;
     }
-    .imagenes{
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: stretch;
-    }
-        .imagenes:hover{
-            animation: pulse 1s ease-in 750ms;
-        }
-    .imagen-beatles{
-        display: grid; 
-        width: 560px;
-        margin: 15px 25% 15px;
-    }
-        .imagen-beatles:hover{
-            animation: pulse;
-            animation-duration: 1s;
-        }
 
         .cuadro{
             width: 500px;
@@ -168,7 +136,7 @@
         }
 
         .fondo{
-            background: linear-gradient(violet,skyblue);
+            background: linear-gradient(black,grey);
         }
 
         .style{
