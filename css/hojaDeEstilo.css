@@ -11,12 +11,10 @@
     background-attachment: fixed;
     font-family: 'Calligraffitti', cursive;
     color: white;
-    }
-    
+    }   
     .menu{
         background-image: url("../imagen/fondo2.jpg");
     }
-
     .gradientes{
         font-family: 'Calligraffitti', cursive;
         font-size: 25px;
@@ -25,12 +23,11 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-
     .gradientes:hover{
         animation: bounce 2s ease-in .2ms;
     }
     #proposito{
-        padding-top: 90px;
+        padding-top: 95px;
         padding-left: 10%;    
         padding-right: 10%;    
     }
@@ -70,13 +67,6 @@
                 line-height: 1.5;
                 font-size: 35px;
             }
-                #introduccion .introduccion__imagen {
-                    width: 500px;
-                    margin: 15px auto;
-                }
-                    #introduccion .introduccion__imagen img {
-                        border: double 4px white;
-                    }
     .fuera{
         padding-left: 10%;    
         padding-right: 10%;
@@ -102,14 +92,17 @@
         padding-top: 15px;
         padding-bottom: 15px;
         font-size: 20px;
-        font-family: 'Coming Soon', cursive;
+        font-family: 'Calligraffitti', cursive;
         text-align: center;  
         background: -webkit-linear-gradient(violet,skyblue);
         background-clip:none;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
     }
-        #piePagina:hover{
+    .ventana{
+        width: 60%;
+    }
+    #piePagina:hover{
             animation: zoomIn 2s ease-in .2ms;
             font-size: 30px;
         }
@@ -169,8 +162,25 @@
             animation-duration: 1s;
         }
 
-        .ventana{
-            width: 60%;
+        .cuadro{
+            width: 500px;
+             height: 500px;
+        }
+
+        .fondo{
+            background: linear-gradient(violet,skyblue);
+        }
+
+        .style{
+            max-width:75%; 
+            max-height:400px;
+        }
+
+        .texto{
+            font-family: 'Calligraffitti', cursive;
+            font-size: 20px;
+            text-align: center;
+            color: white;
         }
 
 @media (min-width: 424px) and (max-width: 768px) {
@@ -286,6 +296,11 @@
             animation: zoomIn 2s ease-in .2ms;
             width: 75%;
             font-size: 30px;
+        }
+
+        .cuadro{
+            width: 400px;
+             height: 200px;
         }
 }
 
