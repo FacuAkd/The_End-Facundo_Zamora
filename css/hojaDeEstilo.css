@@ -137,6 +137,7 @@
 
         .fondo{
             background: linear-gradient(black,grey);
+            overflow:auto;
         }
 
         .style{
@@ -162,22 +163,6 @@
     align-items: center; 
     position: fixed;
     }
-        #menu .menu__imagen img{
-        display: none;
-        }
-            #menu ul{
-            font-size: 15px;
-            display: flex;
-            list-style: none;
-            }
-                #menu ul li a{
-                margin: 0 2px;
-                padding: 20px 5px;
-                color: white;
-                }
-                    #menu ul li a:hover{
-                    background-color:rgb(214, 214, 26);
-                    }
     #proposito{
     margin: 0px 5%;
     padding: 0px auto;
@@ -206,58 +191,9 @@
             line-height: 1.5;
             font-size: 20px;
             }
-                #introduccion .introduccion__imagen img{
-                width: 300px;
-                padding: 0px auto;
-                border: double 4px white;
-                }
-    #formulario{
-        width:300px;
-        margin:15px 12% ;
-        padding:3px 17px 3px 17px;
-        border: double 4px white;
-        border-radius:10px;
-        display: inline-block;
-       }
-        #nombre,#edad,#apellido,#pais,#email{
-            background-color: black;
-            margin: 10px auto ;
-            width: 300px;
-            padding: 5px auto;
-            border: solid 2px white;
-            font-family: sans-serif;
-            color: white;
-            border-radius:10px;
-            font-size: 14px;
-            }
-                #formulario textarea{
-                background-color: black;
-                margin: 10px auto ;
-                width: 300px;
-                padding: 5px auto;
-                border: solid 2px white;
-                font-family: sans-serif;
-                color: white;
-                border-radius:10px;
-                }
-    #collage img{
-    width:300px;
-    margin:15px 12%;
-    padding:1px 20px 1px 20px; 
-    border: double 4px white;
-    }        
-    .imagenes{
-    display: flex;
-    flex-direction: column;
-    }
-    .imagen-beatles{
-    display: none;
-    }
-    .disco{
-    border: none;
-    }
+
         .disco__texto{
-        display: none;
+            overflow: hidden;
         }
 
         #piePagina:hover{
@@ -270,6 +206,31 @@
             width: 400px;
              height: 200px;
         }
+
+        .fuera{
+            text-align: center;
+            line-height: 1.5;
+            font-size: 20px;
+            }
+
+            .ventana{
+                width: 100%;
+               
+            }
+
+            .formulario {
+                width: 100%;
+                height: auto;
+                box-sizing:content-box;
+            }
+
+            .fondo{
+                overflow:scroll;
+            }
+
+            .style{
+                height: 280px;
+            }
 }
 
 
