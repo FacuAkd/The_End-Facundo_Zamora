@@ -38,8 +38,9 @@ nav.menu {
 }
 
 #proposito .proposito__titulo {
-  text-align: center;
+  font-family: "Calligraffitti", cursive;
   font-size: 60px;
+  text-align: center;
   background: -webkit-linear-gradient(black, violet, rgba(209, 17, 91, 0.829));
   background-clip: none;
   -webkit-background-clip: text;
@@ -63,9 +64,10 @@ nav.menu {
 }
 
 #introduccion .introduccion__titulo {
+  font-family: "Calligraffitti", cursive;
+  font-size: 60px;
   text-align: center;
   line-height: 1.5;
-  font-size: 60px;
   background: -webkit-linear-gradient(black, violet, rgba(209, 17, 91, 0.829));
   background-clip: none;
   -webkit-background-clip: text;
@@ -83,7 +85,7 @@ nav.menu {
 }
 
 .fuera {
-  font-family: "Calligraffitti";
+  font-family: "Calligraffitti", cursive;
   font-size: 35px;
   padding-left: 10%;
   padding-right: 10%;
@@ -92,7 +94,7 @@ nav.menu {
   line-height: 1.5;
 }
 
-section .titulo_pelicula {
+.titulo_pelicula {
   font-size: 60px;
   text-align: center;
   line-height: 1.5;
@@ -102,13 +104,13 @@ section .titulo_pelicula {
   -webkit-text-fill-color: transparent;
 }
 
-section .pelicula {
+div.pelicula {
   width: 500px;
   margin: 15px auto;
   display: inline;
 }
 
-section .pelicula iframe {
+div.pelicula iframe {
   width: 560px;
   margin: 15px 25%;
 }
@@ -128,7 +130,6 @@ section .pelicula iframe {
 }
 
 .fondo {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(grey));
   background: linear-gradient(black, grey);
   overflow: auto;
 }
@@ -138,8 +139,8 @@ section .pelicula iframe {
   max-height: 400px;
 }
 
-.texto {
-  font-family: 'Calligraffitti', cursive;
+div.texto {
+  font-family: "Calligraffitti", cursive;
   font-size: 20px;
   text-align: center;
   color: white;
@@ -156,7 +157,7 @@ section .pelicula iframe {
           justify-content: space-evenly;
 }
 
-#redes:hover {
+#redes :hover {
   -webkit-animation: flip;
           animation: flip;
   -webkit-animation-duration: 1s;
@@ -191,15 +192,9 @@ section .pelicula iframe {
     margin: auto;
     padding: 20px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
   }
   #proposito {
@@ -234,8 +229,7 @@ section .pelicula iframe {
     overflow: hidden;
   }
   #piePagina:hover {
-    -webkit-animation: zoomIn 2s ease-in .2ms;
-            animation: zoomIn 2s ease-in .2ms;
+    animation: zoomIn 2s ease-in .2ms;
     width: 75%;
     font-size: 30px;
   }
@@ -254,8 +248,7 @@ section .pelicula iframe {
   .formulario {
     width: 100%;
     height: auto;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    box-sizing: content-box;
   }
   .fondo {
     overflow: scroll;

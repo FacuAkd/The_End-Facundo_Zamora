@@ -56,8 +56,11 @@ nav{
     }
 
     & .proposito__titulo{
+        font: {
+            family: $letra, cursive;
+            size: $alturaLetraTitulos;
+        }    
         text-align: $alineacionTexto;
-        font-size: $alturaLetraTitulos;
         background: -webkit-linear-gradient(black,violet,rgba(209, 17, 91, 0.829));
         background-clip:none;
         -webkit-background-clip: text;
@@ -87,9 +90,12 @@ nav{
     }
 
     & .introduccion__titulo{
+        font: {
+            family: $letra, cursive;
+            size: $alturaLetraTitulos;
+        }  
         text-align: $alineacionTexto;
         line-height: $interlineado;
-        font-size: $alturaLetraTitulos;
         background: -webkit-linear-gradient(black,violet,rgba(209, 17, 91, 0.829));
         background-clip:none;
         -webkit-background-clip: text;
@@ -113,7 +119,7 @@ nav{
 
 .fuera{
     font: {
-        family:$letra;
+        family:$letra, cursive;
         size: $alturaLetraTexto;
     }
     padding: {
@@ -125,8 +131,8 @@ nav{
     line-height: $interlineado;
 }
 
-section{
-    & .titulo_pelicula{
+
+    .titulo_pelicula{
         font-size: $alturaLetraTitulos;
         text-align: $alineacionTexto;
         line-height:$interlineado;
@@ -136,17 +142,18 @@ section{
         -webkit-text-fill-color: transparent;
     }
 
-    & .pelicula{
-        width: 500px;
-        margin: 15px auto;
-        display: inline;
-    
-        iframe{
-            width: 560px;
-            margin: 15px 25%;  
+    div{
+        &.pelicula{
+            width: 500px;
+            margin: 15px auto;
+            display: inline;
+        
+            iframe{
+                width: 560px;
+                margin: 15px 25%;
+            }      
         }
     }
-}
 
 .ventana{
     width: 60%;
@@ -159,7 +166,7 @@ section{
 
 .cuadro{
         width: 500px;
-         height: 500px;
+        height: 500px;
 }
 
 .fondo{
@@ -172,11 +179,15 @@ section{
         max-height:400px;
 }
 
-.texto{
-        font-family: 'Calligraffitti', cursive;
-        font-size: 20px;
-        text-align: center;
-        color: white;
+div{
+    &.texto{
+        font: {
+            family: $letra,cursive;
+            size: 20px;
+        }
+        text-align: $alineacionTexto;
+        color: $colorLetra;
+    }
 }
 
 #redes{
@@ -187,7 +198,7 @@ section{
     display: flex;
     justify-content: space-evenly;
 
-    &:hover{
+    & :hover{
         animation: flip;
         animation-duration: 1s;
     }
@@ -219,44 +230,58 @@ section{
 }
 
 @media (min-width: 424px) and (max-width: 768px) {
-    #menu{
-    background-image: url("../imagen/fondo2.jpg");
-    margin: auto;
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;  
-    align-items: center; 
-    position: fixed;
+
+    nav{
+        &.menu{
+            background-image: url("../imagen/fondo2.jpg");
+        }
     }
     #proposito{
-    margin: 0px 5%;
-    padding: 0px auto;
-    }
-        #proposito .proposito__titulo {
-        text-align: center;
-        font-size: 55px;
-        margin-bottom: 10px;
+        margin: 0px 5%;
+        padding: 0px auto;
+    
+        & .proposito__titulo {
+            font: {
+                family: $letra, cursive;
+                size: 55px;
+            }
+            text-align: $alineacionTexto;
+            margin-bottom: 10px;
         }      
             .proposito__texto{
-            text-align: center;
-            line-height: 1.5;
-            font-size: 20px;
+                font: {
+                    family: $letra, cursive;
+                    size:$alturaLetraTexto;
+                }
+                text-align: &$alineacionTexto;
+                line-height: $interlineado;
+                font-size: 20px;
             }
+    }
+
     #introduccion{
     margin: 0px 5%;
     padding: 0px auto;
-    }
-        #introduccion .introduccion__titulo{
-        text-align: center;
-        font-size: 55px;
-        margin-bottom: 10px;
+    
+        & .introduccion__titulo{
+            font: {
+                family: $letra, cursive;
+                size: 55px;
+            }     
+            text-align: $alineacionTexto;
+            margin-bottom: 10px;
         }
-            #introduccion .introduccion__texto{
+
+        & .introduccion__texto{
+            font: {
+                family: $letra, cursive;
+                size: 50px;
+            }
             text-align: center;
             line-height: 1.5;
-            font-size: 20px;
-            }
+        }
+    }        
+
 
         .disco__texto{
             overflow: hidden;
@@ -297,4 +322,6 @@ section{
             .style{
                 height: 280px;
             }
+
+            
 }
