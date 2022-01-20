@@ -1,0 +1,300 @@
+$letra:'Calligraffitti';
+$colorLetra:white;
+$alturaLetraMenu:25px;
+$alturaLetraTitulos:60px;
+$alturaLetraTexto:35px;
+$paddingTop:5px;
+$paddingLeft:10%;
+$paddingRight:10%;
+$alineacionTexto:center;
+$interlineado:1.5;
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+} /* reset */
+
+#body{
+    background: {
+        image:url("../imagen/fondo2.jpg");
+        attachment:fixed;
+    }
+}
+
+nav{
+    &.menu{
+        background-image: url("../imagen/fondo2.jpg");
+    }
+}
+
+    .gradientes{
+        font: {
+            family: $letra, cursive;
+            size: $alturaLetraMenu;
+        }
+        background: -webkit-linear-gradient(violet,skyblue);
+        background-clip:none;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:hover{
+            animation: bounce 2s ease-in .2ms;
+        }
+    }
+
+
+#proposito{
+    padding: {
+        top:95px;
+        left: $paddingLeft;
+        right: $paddingRight;
+    }
+
+    & .proposito__titulo{
+        text-align: $alineacionTexto;
+        font-size: $alturaLetraTitulos;
+        background: -webkit-linear-gradient(black,violet,rgba(209, 17, 91, 0.829));
+        background-clip:none;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    & .proposito__texto{
+        font: {
+            family: $letra, cursive;
+            size:$alturaLetraTexto;
+        }
+        color: $colorLetra;
+        padding: {
+            top:$paddingTop;
+            bottom:15px;
+        }
+        text-align: center; 
+        line-height: $interlineado;
+    }
+}
+
+#introduccion{
+    padding: {
+        top: $paddingTop;
+        left: $paddingLeft;
+        right: $paddingRight;
+    }
+
+    & .introduccion__titulo{
+        text-align: $alineacionTexto;
+        line-height: $interlineado;
+        font-size: $alturaLetraTitulos;
+        background: -webkit-linear-gradient(black,violet,rgba(209, 17, 91, 0.829));
+        background-clip:none;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    & .introduccion__texto{
+        font: {
+            family: $letra, cursive;
+            size: $alturaLetraTexto;
+        }
+        color: $colorLetra;
+        padding: {
+            top:$paddingTop;
+            bottom: 30px;
+        }
+        text-align: $alineacionTexto;
+        line-height: $interlineado;
+    }
+}
+
+.fuera{
+    font: {
+        family:$letra;
+        size: $alturaLetraTexto;
+    }
+    padding: {
+        left: $paddingLeft;
+        right: $paddingRight;
+    }
+    color: $colorLetra;
+    text-align: $alineacionTexto;
+    line-height: $interlineado;
+}
+
+section{
+    & .titulo_pelicula{
+        font-size: $alturaLetraTitulos;
+        text-align: $alineacionTexto;
+        line-height:$interlineado;
+        background: -webkit-linear-gradient(black,violet,rgba(209, 17, 91, 0.829));
+        background-clip:none;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    & .pelicula{
+        width: 500px;
+        margin: 15px auto;
+        display: inline;
+    
+        iframe{
+            width: 560px;
+            margin: 15px 25%;  
+        }
+    }
+}
+
+.ventana{
+    width: 60%;
+}
+
+.video{
+    width: 500px;
+    margin: 15px auto;
+}
+
+.cuadro{
+        width: 500px;
+         height: 500px;
+}
+
+.fondo{
+        background: linear-gradient(black,grey);
+        overflow:auto;
+}
+
+.style{
+        max-width:75%; 
+        max-height:400px;
+}
+
+.texto{
+        font-family: 'Calligraffitti', cursive;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+}
+
+#redes{
+    margin: {
+        top: 30px;
+        bottom: 30px;
+    }
+    display: flex;
+    justify-content: space-evenly;
+
+    &:hover{
+        animation: flip;
+        animation-duration: 1s;
+    }
+}
+
+#piePagina{
+    width: 100%;
+    margin: 0px auto;
+    padding: {
+        top: 15px;
+        right: auto;
+        bottom: 15px;
+        left: auto;
+    }
+    font: {
+        family: $letra;
+        size: 20px;
+    }
+    text-align: $alineacionTexto;
+    background: -webkit-linear-gradient(violet,skyblue);
+    background-clip:none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    &:hover{
+        animation: zoomIn 2s ease-in .2ms;
+        font-size: $alturaLetraTexto;
+    }
+}
+
+@media (min-width: 424px) and (max-width: 768px) {
+    #menu{
+    background-image: url("../imagen/fondo2.jpg");
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+    position: fixed;
+    }
+    #proposito{
+    margin: 0px 5%;
+    padding: 0px auto;
+    }
+        #proposito .proposito__titulo {
+        text-align: center;
+        font-size: 55px;
+        margin-bottom: 10px;
+        }      
+            .proposito__texto{
+            text-align: center;
+            line-height: 1.5;
+            font-size: 20px;
+            }
+    #introduccion{
+    margin: 0px 5%;
+    padding: 0px auto;
+    }
+        #introduccion .introduccion__titulo{
+        text-align: center;
+        font-size: 55px;
+        margin-bottom: 10px;
+        }
+            #introduccion .introduccion__texto{
+            text-align: center;
+            line-height: 1.5;
+            font-size: 20px;
+            }
+
+        .disco__texto{
+            overflow: hidden;
+        }
+
+        #piePagina:hover{
+            animation: zoomIn 2s ease-in .2ms;
+            width: 75%;
+            font-size: 30px;
+        }
+
+        .cuadro{
+            width: 400px;
+             height: 200px;
+        }
+
+        .fuera{
+            text-align: center;
+            line-height: 1.5;
+            font-size: 20px;
+            }
+
+            .ventana{
+                width: 100%;
+               
+            }
+
+            .formulario {
+                width: 100%;
+                height: auto;
+                box-sizing:content-box;
+            }
+
+            .fondo{
+                overflow:scroll;
+            }
+
+            .style{
+                height: 280px;
+            }
+}
