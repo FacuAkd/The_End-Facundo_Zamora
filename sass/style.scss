@@ -1,7 +1,8 @@
 $letra:'Calligraffitti';
 $colorLetra:white;
+$colorTitulo:#E8DF15;
 $alturaLetraMenu:25px;
-$alturaLetraTitulos:60px;
+$alturaLetraTitulos:100px;
 $alturaLetraTexto:35px;
 $paddingTop:5px;
 $paddingLeft:10%;
@@ -19,20 +20,17 @@ $interlineado:1.5;
 } /* reset */
 
 #body{
-    background: {
-        image:url("../imagen/fondo2.jpg");
-        attachment:fixed;
-    }
+    background-image: url(../imagen/fondoPatron.png);
 }
-
     
-   div{ 
+   div{
     &.superposicion{
         z-index: 99;
     }
     nav{
         &.menu{
-            background-image: url("../imagen/fondo2.jpg");
+            background-image: url(../imagen/fondoPatron.png);
+
         }
     }
 }
@@ -42,12 +40,9 @@ $interlineado:1.5;
             family: $letra, cursive;
             size: $alturaLetraMenu;
         }
-        background: -webkit-linear-gradient(violet,skyblue);
-        background-clip:none;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
+        -webkit-text-fill-color:#FFD817;
         &:hover{
+            background-color:#038C8C;
             animation: bounce 2s ease-in .2ms;
         }
     }
@@ -61,18 +56,18 @@ $interlineado:1.5;
     }
 
     & .proposito__titulo{
+        color: $colorTitulo; 
         font: {
             family: $letra, cursive;
             size: $alturaLetraTitulos;
-        }    
+            
+        } 
+          
         text-align: $alineacionTexto;
-        background: -webkit-linear-gradient(black,violet,rgba(209, 17, 91, 0.829));
-        background-clip:none;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     & .proposito__texto{
+        
         font: {
             family: $letra, cursive;
             size:$alturaLetraTexto;
@@ -95,16 +90,13 @@ $interlineado:1.5;
     }
 
     & .introduccion__titulo{
+        color: $colorTitulo;  
         font: {
             family: $letra, cursive;
             size: $alturaLetraTitulos;
         }  
         text-align: $alineacionTexto;
         line-height: $interlineado;
-        background: -webkit-linear-gradient(black,violet,rgba(209, 17, 91, 0.829));
-        background-clip:none;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     & .introduccion__texto{
@@ -175,7 +167,7 @@ $interlineado:1.5;
 }
 
 .fondo{
-        background: linear-gradient(black,grey);
+        background: linear-gradient(black);
         overflow:auto;
 }
 
@@ -218,20 +210,21 @@ div{
         bottom: 15px;
         left: auto;
     }
+    color: #FFD817;
     font: {
         family: $letra;
         size: 20px;
     }
     text-align: $alineacionTexto;
-    background: -webkit-linear-gradient(violet,skyblue);
-    background-clip:none;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     
     &:hover{
         animation: zoomIn 2s ease-in .2ms;
         font-size: $alturaLetraTexto;
     }
+}
+
+.color{
+    color: $colorTitulo;
 }
 
 @media (min-width: 424px) and (max-width: 768px) {

@@ -9,8 +9,7 @@
 
 /* reset */
 #body {
-  background-image: url("../imagen/fondo2.jpg");
-  background-attachment: fixed;
+  background-image: url(../imagen/fondoPatron.png);
 }
 
 div.superposicion {
@@ -18,19 +17,17 @@ div.superposicion {
 }
 
 div nav.menu {
-  background-image: url("../imagen/fondo2.jpg");
+  background-image: url(../imagen/fondoPatron.png);
 }
 
 .gradientes {
   font-family: "Calligraffitti", cursive;
   font-size: 25px;
-  background: -webkit-linear-gradient(violet, skyblue);
-  background-clip: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #FFD817;
 }
 
 .gradientes:hover {
+  background-color: #038C8C;
   -webkit-animation: bounce 2s ease-in .2ms;
           animation: bounce 2s ease-in .2ms;
 }
@@ -42,13 +39,10 @@ div nav.menu {
 }
 
 #proposito .proposito__titulo {
+  color: #E8DF15;
   font-family: "Calligraffitti", cursive;
-  font-size: 60px;
+  font-size: 100px;
   text-align: center;
-  background: -webkit-linear-gradient(black, violet, rgba(209, 17, 91, 0.829));
-  background-clip: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #proposito .proposito__texto {
@@ -68,14 +62,11 @@ div nav.menu {
 }
 
 #introduccion .introduccion__titulo {
+  color: #E8DF15;
   font-family: "Calligraffitti", cursive;
-  font-size: 60px;
+  font-size: 100px;
   text-align: center;
   line-height: 1.5;
-  background: -webkit-linear-gradient(black, violet, rgba(209, 17, 91, 0.829));
-  background-clip: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #introduccion .introduccion__texto {
@@ -99,7 +90,7 @@ div nav.menu {
 }
 
 .titulo_pelicula {
-  font-size: 60px;
+  font-size: 100px;
   text-align: center;
   line-height: 1.5;
   background: -webkit-linear-gradient(black, violet, rgba(209, 17, 91, 0.829));
@@ -134,8 +125,8 @@ div.pelicula iframe {
 }
 
 .fondo {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(grey));
-  background: linear-gradient(black, grey);
+  background: -webkit-gradient(linear, left top, left bottom, from(black));
+  background: linear-gradient(black);
   overflow: auto;
 }
 
@@ -176,19 +167,20 @@ div.texto {
   padding-right: auto;
   padding-bottom: 15px;
   padding-left: auto;
+  color: #FFD817;
   font-family: "Calligraffitti";
   font-size: 20px;
   text-align: center;
-  background: -webkit-linear-gradient(violet, skyblue);
-  background-clip: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #piePagina:hover {
   -webkit-animation: zoomIn 2s ease-in .2ms;
           animation: zoomIn 2s ease-in .2ms;
   font-size: 35px;
+}
+
+.color {
+  color: #E8DF15;
 }
 
 @media (min-width: 424px) and (max-width: 768px) {
