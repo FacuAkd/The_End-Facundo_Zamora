@@ -13,7 +13,11 @@
   background-attachment: fixed;
 }
 
-nav.menu {
+div.superposicion {
+  z-index: 99;
+}
+
+div nav.menu {
   background-image: url("../imagen/fondo2.jpg");
 }
 
@@ -130,6 +134,7 @@ div.pelicula iframe {
 }
 
 .fondo {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(grey));
   background: linear-gradient(black, grey);
   overflow: auto;
 }
@@ -187,26 +192,22 @@ div.texto {
 }
 
 @media (min-width: 424px) and (max-width: 768px) {
-  #menu {
+  nav.menu {
     background-image: url("../imagen/fondo2.jpg");
-    margin: auto;
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
   }
   #proposito {
     margin: 0px 5%;
     padding: 0px auto;
   }
   #proposito .proposito__titulo {
-    text-align: center;
+    font-family: "Calligraffitti", cursive;
     font-size: 55px;
+    text-align: center;
     margin-bottom: 10px;
   }
-  .proposito__texto {
+  #proposito .proposito__texto {
+    font-family: "Calligraffitti", cursive;
+    font-size: 35px;
     text-align: center;
     line-height: 1.5;
     font-size: 20px;
@@ -216,20 +217,23 @@ div.texto {
     padding: 0px auto;
   }
   #introduccion .introduccion__titulo {
-    text-align: center;
+    font-family: "Calligraffitti", cursive;
     font-size: 55px;
+    text-align: center;
     margin-bottom: 10px;
   }
   #introduccion .introduccion__texto {
+    font-family: "Calligraffitti", cursive;
+    font-size: 50px;
     text-align: center;
     line-height: 1.5;
-    font-size: 20px;
   }
   .disco__texto {
     overflow: hidden;
   }
   #piePagina:hover {
-    animation: zoomIn 2s ease-in .2ms;
+    -webkit-animation: zoomIn 2s ease-in .2ms;
+            animation: zoomIn 2s ease-in .2ms;
     width: 75%;
     font-size: 30px;
   }
@@ -248,7 +252,8 @@ div.texto {
   .formulario {
     width: 100%;
     height: auto;
-    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
   }
   .fondo {
     overflow: scroll;
