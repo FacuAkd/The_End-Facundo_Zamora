@@ -172,12 +172,6 @@ div{
         max-height:400px;
 }
 
-div{
-    &.texto{
-        @include textoArticulo;
-    }
-}
-
 #redes{
     margin: {
         top: 30px;
