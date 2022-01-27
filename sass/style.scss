@@ -1,15 +1,3 @@
-$letra:'Calligraffitti';
-$colorLetra:white;
-$colorTitulo:#E8DF15;
-$alturaLetraMenu:25px;
-$alturaLetraTitulos:100px;
-$alturaLetraTexto:35px;
-$paddingTop:5px;
-$paddingLeft:10%;
-$paddingRight:10%;
-$alineacionTexto:center;
-$interlineado:1.5;
-
 *{
 	margin: 0;
 	padding: 0;
@@ -18,6 +6,63 @@ $interlineado:1.5;
 	border: none;
 	outline: none;
 } /* reset */
+
+$letra:'Calligraffitti';
+$paddingTop:5px;
+$paddingLeft:10%;
+$paddingRight:10%;
+$alineacionTexto:center;
+$interlineado:1.5;
+
+$alturaLetra:(
+    menu:25px,
+    titulo:100px,
+    texto:35px,
+);
+
+$colores:(
+    letra: white,
+    titulo:#E8DF15,
+    menuYfooter:#FFD817,
+    menuHover:#038C8C
+);
+
+@mixin padding {
+    padding-left: $paddingLeft;
+    padding-right: $paddingRight;   
+}
+
+@mixin modificadorTexto {
+    text-align: $alineacionTexto; 
+    line-height: $interlineado;
+}
+
+@mixin textoMenu {
+    color: map-get($map: $colores, $key:menuYfooter);
+    font: {
+        family: $letra, cursive;
+        size: map-get($map: $alturaLetra, $key:menu);
+    }
+}
+
+@mixin textoTitulos {
+    color: map-get($map: $colores, $key:titulo); 
+        font: {
+            family: $letra, cursive;
+            size: map-get($map: $alturaLetra, $key:titulo);   
+        }     
+        text-align: $alineacionTexto;
+        line-height: $interlineado;
+}
+
+@mixin textoArticulo {
+    font: {
+        family: $letra, cursive;
+        size:map-get($map: $alturaLetra, $key:texto);
+    }
+    color: map-get($map: $colores, $key:letra );
+    @include modificadorTexto;    
+}
 
 #body{
     background-image: url(../imagen/fondoPatron.png);
@@ -35,108 +80,59 @@ $interlineado:1.5;
     }
 }
 
-    .gradientes{
-        font: {
-            family: $letra, cursive;
-            size: $alturaLetraMenu;
+div{
+    .navbar-nav{
+        & .menuColor{
+            @include textoMenu;
+            &:hover{
+                background-color:map-get($map: $colores, $key:menuHover);
+                animation: bounce 2s ease-in .2ms;
+            }
         }
-        -webkit-text-fill-color:#FFD817;
-        &:hover{
-            background-color:#038C8C;
-            animation: bounce 2s ease-in .2ms;
-        }
-    }
-
+    }  
+}
 
 #proposito{
+    @include padding;
     padding: {
         top:95px;
-        left: $paddingLeft;
-        right: $paddingRight;
     }
 
     & .proposito__titulo{
-        color: $colorTitulo; 
-        font: {
-            family: $letra, cursive;
-            size: $alturaLetraTitulos;
-            
-        } 
-          
-        text-align: $alineacionTexto;
+        @include textoTitulos;
     }
 
     & .proposito__texto{
-        
-        font: {
-            family: $letra, cursive;
-            size:$alturaLetraTexto;
-        }
-        color: $colorLetra;
-        padding: {
-            top:$paddingTop;
-            bottom:15px;
-        }
-        text-align: $alineacionTexto; 
-        line-height: $interlineado;
+        @include textoArticulo;
     }
 }
 
 #introduccion{
+    @include padding;
     padding: {
         top: $paddingTop;
-        left: $paddingLeft;
-        right: $paddingRight;
     }
-
+        
     & .introduccion__titulo{
-        color: $colorTitulo;  
-        font: {
-            family: $letra, cursive;
-            size: $alturaLetraTitulos;
-        }  
-        text-align: $alineacionTexto;
-        line-height: $interlineado;
+        @include textoTitulos;
     }
 
     & .introduccion__texto{
-        font: {
-            family: $letra, cursive;
-            size: $alturaLetraTexto;
-        }
-        color: $colorLetra;
+        @include textoArticulo;
         padding: {
             top:$paddingTop;
-            bottom: 30px;
+            bottom:15px;
         }
-        text-align: $alineacionTexto;
-        line-height: $interlineado;
     }
 }
 
 .fuera{
-    font: {
-        family:$letra, cursive;
-        size: $alturaLetraTexto;
+    @include textoArticulo;
+    @include padding;
     }
-    padding: {
-        left: $paddingLeft;
-        right: $paddingRight;
-    }
-    color: $colorLetra;
-    text-align: $alineacionTexto;
-    line-height: $interlineado;
-}
-
 
     .titulo_pelicula{
-        font-size: $alturaLetraTitulos;
-        text-align: $alineacionTexto;
-        line-height:$interlineado;
-        background: -webkit-linear-gradient(black,violet,rgba(209, 17, 91, 0.829));
-        background-clip:none;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include textoTitulos;
     }
 
     div{
@@ -167,7 +163,7 @@ $interlineado:1.5;
 }
 
 .fondo{
-        background: linear-gradient(black);
+        background: linear-gradient(black,grey);
         overflow:auto;
 }
 
@@ -178,12 +174,7 @@ $interlineado:1.5;
 
 div{
     &.texto{
-        font: {
-            family: $letra,cursive;
-            size: 20px;
-        }
-        text-align: $alineacionTexto;
-        color: $colorLetra;
+        @include textoArticulo;
     }
 }
 
@@ -210,116 +201,113 @@ div{
         bottom: 15px;
         left: auto;
     }
-    color: #FFD817;
-    font: {
-        family: $letra;
-        size: 20px;
-    }
+    @include textoMenu;
     text-align: $alineacionTexto;
     
     &:hover{
         animation: zoomIn 2s ease-in .2ms;
-        font-size: $alturaLetraTexto;
+        font-size: map-get($map: $alturaLetra, $key: texto);
     }
 }
+
 
 .color{
-    color: $colorTitulo;
+    color: map-get($map: $colores, $key: titulo);
 }
 
-@media (min-width: 424px) and (max-width: 768px) {
+// @media (min-width: 424px) and (max-width: 768px) {
 
-    nav{
-        &.menu{
-            background-image: url("../imagen/fondo2.jpg");
-        }
-    }
-    #proposito{
-        margin: 0px 5%;
-        padding: 0px auto;
+//     nav{
+//         &.menu{
+//             background-image: url("../imagen/fondo2.jpg");
+//         }
+//     }
+//     #proposito{
+//         margin: 0px 5%;
+//         padding: 0px auto;
     
-        & .proposito__titulo {
-            font: {
-                family: $letra, cursive;
-                size: 55px;
-            }
-            text-align: $alineacionTexto;
-            margin-bottom: 10px;
-        }      
-            .proposito__texto{
-                font: {
-                    family: $letra, cursive;
-                    size:$alturaLetraTexto;
-                }
-                text-align: $alineacionTexto;
-                line-height: $interlineado;
-                font-size: 20px;
-            }
-    }
+//         & .proposito__titulo {
+//             font: {
+//                 family: $letra, cursive;
+//                 size: 55px;
+//             }
+//             text-align: $alineacionTexto;
+//             margin-bottom: 10px;
+//         }      
+//             .proposito__texto{
+//                 font: {
+//                     family: $letra, cursive;
+//                     size:$alturaLetraTexto;
+//                 }
+//                 text-align: $alineacionTexto;
+//                 line-height: $interlineado;
+//                 font-size: 20px;
+//             }
+//     }
 
-    #introduccion{
-    margin: 0px 5%;
-    padding: 0px auto;
+//     #introduccion{
+//     margin: 0px 5%;
+//     padding: 0px auto;
     
-        & .introduccion__titulo{
-            font: {
-                family: $letra, cursive;
-                size: 55px;
-            }     
-            text-align: $alineacionTexto;
-            margin-bottom: 10px;
-        }
+//         & .introduccion__titulo{
+//             font: {
+//                 family: $letra, cursive;
+//                 size: 55px;
+//             }     
+//             text-align: $alineacionTexto;
+//             margin-bottom: 10px;
+//         }
 
-        & .introduccion__texto{
-            font: {
-                family: $letra, cursive;
-                size: 50px;
-            }
-            text-align: center;
-            line-height: 1.5;
-        }
-    }        
+//         & .introduccion__texto{
+//             font: {
+//                 family: $letra, cursive;
+//                 size: 50px;
+//             }
+//             text-align: center;
+//             line-height: 1.5;
+//         }
+//     }        
 
 
-        .disco__texto{
-            overflow: hidden;
-        }
+//         .disco__texto{
+//             overflow: hidden;
+//         }
 
-        #piePagina:hover{
-            animation: zoomIn 2s ease-in .2ms;
-            width: 75%;
-            font-size: 30px;
-        }
+//         #piePagina:hover{
+//             animation: zoomIn 2s ease-in .2ms;
+//             width: 75%;
+//             font-size: 30px;
+//         }
 
-        .cuadro{
-            width: 400px;
-             height: 200px;
-        }
+//         .cuadro{
+//             width: 400px;
+//              height: 200px;
+//         }
 
-        .fuera{
-            text-align: center;
-            line-height: 1.5;
-            font-size: 20px;
-            }
+//         .fuera{
+//             text-align: center;
+//             line-height: 1.5;
+//             font-size: 20px;
+//             }
 
-            .ventana{
-                width: 100%;
+//             .ventana{
+//                 width: 100%;
                
-            }
+//             }
 
-            .formulario {
-                width: 100%;
-                height: auto;
-                box-sizing:content-box;
-            }
+//             .formulario {
+//                 width: 100%;
+//                 height: auto;
+//                 box-sizing:content-box;
+//             }
 
-            .fondo{
-                overflow:scroll;
-            }
+//             .fondo{
+//                 overflow:scroll;
+//             }
 
-            .style{
-                height: 280px;
-            }
+//             .style{
+//                 height: 280px;
+//             }
 
             
-}
+// }

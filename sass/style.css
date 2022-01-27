@@ -20,22 +20,22 @@ div nav.menu {
   background-image: url(../imagen/fondoPatron.png);
 }
 
-.gradientes {
+div .navbar-nav .menuColor {
+  color: #FFD817;
   font-family: "Calligraffitti", cursive;
   font-size: 25px;
-  -webkit-text-fill-color: #FFD817;
 }
 
-.gradientes:hover {
+div .navbar-nav .menuColor:hover {
   background-color: #038C8C;
   -webkit-animation: bounce 2s ease-in .2ms;
           animation: bounce 2s ease-in .2ms;
 }
 
 #proposito {
-  padding-top: 95px;
   padding-left: 10%;
   padding-right: 10%;
+  padding-top: 95px;
 }
 
 #proposito .proposito__titulo {
@@ -43,22 +43,21 @@ div nav.menu {
   font-family: "Calligraffitti", cursive;
   font-size: 100px;
   text-align: center;
+  line-height: 1.5;
 }
 
 #proposito .proposito__texto {
   font-family: "Calligraffitti", cursive;
   font-size: 35px;
   color: white;
-  padding-top: 5px;
-  padding-bottom: 15px;
   text-align: center;
   line-height: 1.5;
 }
 
 #introduccion {
-  padding-top: 5px;
   padding-left: 10%;
   padding-right: 10%;
+  padding-top: 5px;
 }
 
 #introduccion .introduccion__titulo {
@@ -73,30 +72,28 @@ div nav.menu {
   font-family: "Calligraffitti", cursive;
   font-size: 35px;
   color: white;
-  padding-top: 5px;
-  padding-bottom: 30px;
   text-align: center;
   line-height: 1.5;
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 
 .fuera {
   font-family: "Calligraffitti", cursive;
   font-size: 35px;
-  padding-left: 10%;
-  padding-right: 10%;
   color: white;
   text-align: center;
   line-height: 1.5;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .titulo_pelicula {
+  color: #E8DF15;
+  font-family: "Calligraffitti", cursive;
   font-size: 100px;
   text-align: center;
   line-height: 1.5;
-  background: -webkit-linear-gradient(black, violet, rgba(209, 17, 91, 0.829));
-  background-clip: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 div.pelicula {
@@ -125,8 +122,8 @@ div.pelicula iframe {
 }
 
 .fondo {
-  background: -webkit-gradient(linear, left top, left bottom, from(black));
-  background: linear-gradient(black);
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(grey));
+  background: linear-gradient(black, grey);
   overflow: auto;
 }
 
@@ -137,9 +134,10 @@ div.pelicula iframe {
 
 div.texto {
   font-family: "Calligraffitti", cursive;
-  font-size: 20px;
-  text-align: center;
+  font-size: 35px;
   color: white;
+  text-align: center;
+  line-height: 1.5;
 }
 
 #redes {
@@ -168,8 +166,8 @@ div.texto {
   padding-bottom: 15px;
   padding-left: auto;
   color: #FFD817;
-  font-family: "Calligraffitti";
-  font-size: 20px;
+  font-family: "Calligraffitti", cursive;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -181,77 +179,5 @@ div.texto {
 
 .color {
   color: #E8DF15;
-}
-
-@media (min-width: 424px) and (max-width: 768px) {
-  nav.menu {
-    background-image: url("../imagen/fondo2.jpg");
-  }
-  #proposito {
-    margin: 0px 5%;
-    padding: 0px auto;
-  }
-  #proposito .proposito__titulo {
-    font-family: "Calligraffitti", cursive;
-    font-size: 55px;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  #proposito .proposito__texto {
-    font-family: "Calligraffitti", cursive;
-    font-size: 35px;
-    text-align: center;
-    line-height: 1.5;
-    font-size: 20px;
-  }
-  #introduccion {
-    margin: 0px 5%;
-    padding: 0px auto;
-  }
-  #introduccion .introduccion__titulo {
-    font-family: "Calligraffitti", cursive;
-    font-size: 55px;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  #introduccion .introduccion__texto {
-    font-family: "Calligraffitti", cursive;
-    font-size: 50px;
-    text-align: center;
-    line-height: 1.5;
-  }
-  .disco__texto {
-    overflow: hidden;
-  }
-  #piePagina:hover {
-    -webkit-animation: zoomIn 2s ease-in .2ms;
-            animation: zoomIn 2s ease-in .2ms;
-    width: 75%;
-    font-size: 30px;
-  }
-  .cuadro {
-    width: 400px;
-    height: 200px;
-  }
-  .fuera {
-    text-align: center;
-    line-height: 1.5;
-    font-size: 20px;
-  }
-  .ventana {
-    width: 100%;
-  }
-  .formulario {
-    width: 100%;
-    height: auto;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-  }
-  .fondo {
-    overflow: scroll;
-  }
-  .style {
-    height: 280px;
-  }
 }
 /*# sourceMappingURL=style.css.map */
