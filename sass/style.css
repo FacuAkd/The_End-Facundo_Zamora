@@ -97,8 +97,8 @@ div .navbar-nav .menuColor:hover {
 }
 
 div.pelicula {
-  width: 500px;
-  margin: 15px auto;
+  padding-left: 10%;
+  padding-right: 10%;
   display: inline;
 }
 
