@@ -6,63 +6,9 @@
 	border: none;
 	outline: none;
 } /* reset */
-
-$letra:'Calligraffitti';
-$paddingTop:5px;
-$paddingLeft:10%;
-$paddingRight:10%;
-$alineacionTexto:center;
-$interlineado:1.5;
-
-$alturaLetra:(
-    menu:25px,
-    titulo:100px,
-    texto:35px,
-);
-
-$colores:(
-    letra: white,
-    titulo:#E8DF15,
-    menuYfooter:#FFD817,
-    menuHover:#038C8C
-);
-
-@mixin padding {
-    padding-left: $paddingLeft;
-    padding-right: $paddingRight;   
-}
-
-@mixin modificadorTexto {
-    text-align: $alineacionTexto; 
-    line-height: $interlineado;
-}
-
-@mixin textoMenu {
-    color: map-get($map: $colores, $key:menuYfooter);
-    font: {
-        family: $letra, cursive;
-        size: map-get($map: $alturaLetra, $key:menu);
-    }
-}
-
-@mixin textoTitulos {
-    color: map-get($map: $colores, $key:titulo); 
-        font: {
-            family: $letra, cursive;
-            size: map-get($map: $alturaLetra, $key:titulo);   
-        }     
-        text-align: $alineacionTexto;
-        line-height: $interlineado;
-}
-
-@mixin textoArticulo {
-    font: {
-        family: $letra, cursive;
-        size:map-get($map: $alturaLetra, $key:texto);
-    }
-    color: map-get($map: $colores, $key:letra );
-    @include modificadorTexto;    
-}
+@import"mixinsMobile";
+@import"variables";
+@import"mixins";
 
 #body{
     background-image: url(../imagen/fondoPatron.png);
@@ -143,7 +89,6 @@ div{
         
             iframe{
                 width: 560px;
-                margin: 15px 25%;
             }      
         }
     }
@@ -209,99 +154,98 @@ div{
     color: map-get($map: $colores, $key: titulo);
 }
 
-// @media (min-width: 424px) and (max-width: 768px) {
 
-//     nav{
-//         &.menu{
-//             background-image: url("../imagen/fondo2.jpg");
-//         }
-//     }
-//     #proposito{
-//         margin: 0px 5%;
-//         padding: 0px auto;
+
+@media (min-width: 424px) and (max-width: 450px) {
+
+    #proposito{
+        @include padding;
+        padding: {
+            top:100px;
+        }
     
-//         & .proposito__titulo {
-//             font: {
-//                 family: $letra, cursive;
-//                 size: 55px;
-//             }
-//             text-align: $alineacionTexto;
-//             margin-bottom: 10px;
-//         }      
-//             .proposito__texto{
-//                 font: {
-//                     family: $letra, cursive;
-//                     size:$alturaLetraTexto;
-//                 }
-//                 text-align: $alineacionTexto;
-//                 line-height: $interlineado;
-//                 font-size: 20px;
-//             }
-//     }
-
-//     #introduccion{
-//     margin: 0px 5%;
-//     padding: 0px auto;
+        & .proposito__titulo{
+            @include textoTitulosMobile;
+        }
     
-//         & .introduccion__titulo{
-//             font: {
-//                 family: $letra, cursive;
-//                 size: 55px;
-//             }     
-//             text-align: $alineacionTexto;
-//             margin-bottom: 10px;
-//         }
-
-//         & .introduccion__texto{
-//             font: {
-//                 family: $letra, cursive;
-//                 size: 50px;
-//             }
-//             text-align: center;
-//             line-height: 1.5;
-//         }
-//     }        
+        & .proposito__texto{
+            @include textoArticuloMobile;
+        }
+    }
 
 
-//         .disco__texto{
-//             overflow: hidden;
-//         }
-
-//         #piePagina:hover{
-//             animation: zoomIn 2s ease-in .2ms;
-//             width: 75%;
-//             font-size: 30px;
-//         }
-
-//         .cuadro{
-//             width: 400px;
-//              height: 200px;
-//         }
-
-//         .fuera{
-//             text-align: center;
-//             line-height: 1.5;
-//             font-size: 20px;
-//             }
-
-//             .ventana{
-//                 width: 100%;
-               
-//             }
-
-//             .formulario {
-//                 width: 100%;
-//                 height: auto;
-//                 box-sizing:content-box;
-//             }
-
-//             .fondo{
-//                 overflow:scroll;
-//             }
-
-//             .style{
-//                 height: 280px;
-//             }
-
+    #introduccion{
+        @include padding;
+        padding: {
+            top: $paddingTop;
+        }
             
-// }
+        & .introduccion__titulo{
+            @include textoTitulosMobile;
+        }
+    
+        & .introduccion__texto{
+            @include textoArticuloMobile;
+            padding: {
+                top:$paddingTop;
+                bottom:15px;
+            }
+        }
+    }
+
+    .ventana {
+        width:85%;
+        height: 10%;
+        & img{
+            width: 200px;
+            height: 200px;
+        }
+      }
+
+      div{
+        .navbar-nav{
+            & .menuColor{
+                @include textoMenuMobile;
+            }
+        }    
+    } 
+
+    .fuera{
+        @include textoArticuloMobile;
+        @include padding;
+        }
+
+        div{
+            &.pelicula{
+                iframe{
+                    width: 350px;
+                    height: 270px;
+                }      
+            }
+        }
+    
+        .style{
+            max-width:250px; 
+            max-height:240px;
+    }
+
+    #piePagina{
+        width: 250px;
+        margin: 0px auto;
+        padding: {
+            top: 15px;
+            right: auto;
+            bottom: 15px;
+            left: auto;
+        }
+        @include textoMenuMobile;
+        text-align: $alineacionTexto;
+        
+        &:hover{
+            animation: zoomIn 2s ease-in .2ms;
+            font-size: map-get($map: $alturaLetraMobile, $key: texto);
+        }
+    }
+    
+ 
+ }

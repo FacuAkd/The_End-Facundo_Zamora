@@ -1,0 +1,27 @@
+$letra:'Calligraffitti';
+$paddingTop:5px;
+$paddingLeft:10%;
+$paddingRight:10%;
+$alineacionTexto:center;
+$interlineado:1.5;
+$interlineadoMobile:25px;
+
+$alturaLetra:(
+    menu:25px,
+    titulo:100px,
+    texto:35px,
+);
+
+$colores:(
+    letra: white,
+    titulo:#E8DF15,
+    menuYfooter:#FFD817,
+    menuHover:#038C8C
+);
+
+
+$alturaLetraMobile:(
+    menu:16px,
+    titulo:30px,
+    texto:14px,
+);

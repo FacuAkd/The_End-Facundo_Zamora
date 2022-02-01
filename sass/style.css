@@ -104,7 +104,6 @@ div.pelicula {
 
 div.pelicula iframe {
   width: 560px;
-  margin: 15px 25%;
 }
 
 .ventana {
@@ -130,14 +129,6 @@ div.pelicula iframe {
 .style {
   max-width: 75%;
   max-height: 400px;
-}
-
-div.texto {
-  font-family: "Calligraffitti", cursive;
-  font-size: 35px;
-  color: white;
-  text-align: center;
-  line-height: 1.5;
 }
 
 #redes {
@@ -179,5 +170,95 @@ div.texto {
 
 .color {
   color: #E8DF15;
+}
+
+@media (min-width: 424px) and (max-width: 450px) {
+  #proposito {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+  }
+  #proposito .proposito__titulo {
+    color: #E8DF15;
+    font-family: "Calligraffitti", cursive;
+    font-size: 30px;
+    text-align: center;
+    line-height: 25px;
+  }
+  #proposito .proposito__texto {
+    font-family: "Calligraffitti", cursive;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+  }
+  #introduccion {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5px;
+  }
+  #introduccion .introduccion__titulo {
+    color: #E8DF15;
+    font-family: "Calligraffitti", cursive;
+    font-size: 30px;
+    text-align: center;
+    line-height: 25px;
+  }
+  #introduccion .introduccion__texto {
+    font-family: "Calligraffitti", cursive;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+  .ventana {
+    width: 85%;
+    height: 10%;
+  }
+  .ventana img {
+    width: 200px;
+    height: 200px;
+  }
+  div .navbar-nav .menuColor {
+    color: #FFD817;
+    font-family: "Calligraffitti", cursive;
+    font-size: 16px;
+  }
+  .fuera {
+    font-family: "Calligraffitti", cursive;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  div.pelicula iframe {
+    width: 350px;
+    height: 270px;
+  }
+  .style {
+    max-width: 250px;
+    max-height: 240px;
+  }
+  #piePagina {
+    width: 250px;
+    margin: 0px auto;
+    padding-top: 15px;
+    padding-right: auto;
+    padding-bottom: 15px;
+    padding-left: auto;
+    color: #FFD817;
+    font-family: "Calligraffitti", cursive;
+    font-size: 16px;
+    text-align: center;
+  }
+  #piePagina:hover {
+    -webkit-animation: zoomIn 2s ease-in .2ms;
+            animation: zoomIn 2s ease-in .2ms;
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

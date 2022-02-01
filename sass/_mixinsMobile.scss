@@ -1,0 +1,38 @@
+@import"variables";
+
+@mixin padding {
+    padding-left: $paddingLeft;
+    padding-right: $paddingRight;   
+}
+
+@mixin modificadorTextoMobile {
+    text-align: $alineacionTexto; 
+    line-height: $interlineadoMobile;
+}
+
+@mixin textoMenuMobile {
+    color: map-get($map: $colores, $key:menuYfooter);
+    font: {
+        family: $letra, cursive;
+        size: map-get($map: $alturaLetraMobile, $key:menu);
+    }
+}
+
+@mixin textoTitulosMobile {
+    color: map-get($map: $colores, $key:titulo); 
+        font: {
+            family: $letra, cursive;
+            size: map-get($map: $alturaLetraMobile, $key:titulo);   
+        }     
+        text-align: $alineacionTexto;
+        line-height: $interlineadoMobile;
+}
+
+@mixin textoArticuloMobile {
+    font: {
+        family: $letra, cursive;
+        size:map-get($map: $alturaLetraMobile, $key:texto);
+    }
+    color: map-get($map: $colores, $key:letra );
+    @include modificadorTextoMobile;    
+}
