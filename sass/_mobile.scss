@@ -1,0 +1,95 @@
+@import"mixinsMobile";
+@import"variables";
+@media (min-width: 424px) and (max-width: 450px) {
+
+    #proposito{
+        @include padding;
+        padding: {
+            top:100px;
+        }
+    
+        & .proposito__titulo{
+            @include textoTitulosMobile;
+        }
+    
+        & .proposito__texto{
+            @include textoArticuloMobile;
+        }
+    }
+
+
+    #introduccion{
+        @include padding;
+        padding: {
+            top: $paddingTop;
+        }
+            
+        & .introduccion__titulo{
+            @include textoTitulosMobile;
+        }
+    
+        & .introduccion__texto{
+            @include textoArticuloMobile;
+            padding: {
+                top:$paddingTop;
+                bottom:15px;
+            }
+        }
+    }
+
+    .ventana {
+        width:85%;
+        height: 10%;
+        & img{
+            width: 200px;
+            height: 200px;
+        }
+      }
+
+      div{
+        .navbar-nav{
+            & .menuColor{
+                @include textoMenuMobile;
+            }
+        }    
+    } 
+
+    .fuera{
+        @include textoArticuloMobile;
+        @include padding;
+        }
+
+        div{
+            &.pelicula{
+                iframe{
+                    width: 350px;
+                    height: 270px;
+                }      
+            }
+        }
+    
+        .style{
+            max-width:250px; 
+            max-height:240px;
+    }
+
+    #piePagina{
+        width: 250px;
+        margin: 0px auto;
+        padding: {
+            top: 15px;
+            right: auto;
+            bottom: 15px;
+            left: auto;
+        }
+        @include textoMenuMobile;
+        text-align: $alineacionTexto;
+        
+        &:hover{
+            animation: zoomIn 2s ease-in .2ms;
+            font-size: map-get($map: $alturaLetraMobile, $key: texto);
+        }
+    }
+    
+ 
+ }
