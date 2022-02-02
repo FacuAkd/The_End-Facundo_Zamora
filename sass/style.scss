@@ -154,5 +154,6 @@ div{
 .color{
     color: map-get($map: $colores, $key: titulo);
 }
-
+@import"desktop";
 @import"mobile";
+

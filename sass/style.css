@@ -172,6 +172,99 @@ div.pelicula iframe {
   color: #E8DF15;
 }
 
+@media (min-width: 767px) and (max-width: 900px) {
+  #proposito {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+  }
+  #proposito .proposito__titulo {
+    color: #E8DF15;
+    font-family: "Calligraffitti", cursive;
+    font-size: 34px;
+    text-align: center;
+    line-height: 30px;
+  }
+  #proposito .proposito__texto {
+    font-family: "Calligraffitti", cursive;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+  }
+  #introduccion {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5px;
+  }
+  #introduccion .introduccion__titulo {
+    color: #E8DF15;
+    font-family: "Calligraffitti", cursive;
+    font-size: 34px;
+    text-align: center;
+    line-height: 30px;
+  }
+  #introduccion .introduccion__texto {
+    font-family: "Calligraffitti", cursive;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+  .ventana {
+    width: 85%;
+    height: 10%;
+  }
+  .ventana img {
+    width: 200px;
+    height: 200px;
+  }
+  div .navbar-nav .menuColor {
+    color: #FFD817;
+    font-family: "Calligraffitti", cursive;
+    font-size: 18px;
+  }
+  .fuera {
+    font-family: "Calligraffitti", cursive;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  div.pelicula {
+    padding: auto;
+  }
+  div.pelicula iframe {
+    width: 350px;
+    height: 270px;
+  }
+  .style {
+    max-width: 550px;
+    max-height: 200px;
+  }
+  #piePagina {
+    width: 250px;
+    margin: 0px auto;
+    padding-top: 15px;
+    padding-right: auto;
+    padding-bottom: 15px;
+    padding-left: auto;
+    color: #FFD817;
+    font-family: "Calligraffitti", cursive;
+    font-size: 18px;
+    text-align: center;
+  }
+  #piePagina:hover {
+    -webkit-animation: zoomIn 2s ease-in .2ms;
+            animation: zoomIn 2s ease-in .2ms;
+    font-size: 18px;
+  }
+}
+
 @media (min-width: 424px) and (max-width: 450px) {
   #proposito {
     padding-left: 10%;
@@ -234,6 +327,9 @@ div.pelicula iframe {
     line-height: 25px;
     padding-left: 10%;
     padding-right: 10%;
+  }
+  div.pelicula {
+    padding: auto;
   }
   div.pelicula iframe {
     width: 350px;

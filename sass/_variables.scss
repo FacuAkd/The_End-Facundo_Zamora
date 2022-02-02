@@ -5,6 +5,7 @@ $paddingRight:10%;
 $alineacionTexto:center;
 $interlineado:1.5;
 $interlineadoMobile:25px;
+$interlineadoDesktop: 30px;
 
 $alturaLetra:(
     menu:25px,
@@ -24,4 +25,10 @@ $alturaLetraMobile:(
     menu:16px,
     titulo:30px,
     texto:14px,
+);
+
+$alturaLetraDesktop:(
+    menu:18px,
+    titulo:34px,
+    texto:18px,
 );

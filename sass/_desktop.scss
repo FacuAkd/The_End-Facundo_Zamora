@@ -1,0 +1,96 @@
+@import"mixinsDesktop";
+@import"variables";
+@media (min-width: 767px) and (max-width: 900px) {
+
+    #proposito{
+        @include padding;
+        padding: {
+            top:100px;
+        }
+    
+        & .proposito__titulo{
+            @include textoTitulosDesktop;
+        }
+    
+        & .proposito__texto{
+            @include textoArticuloDesktop;
+        }
+    }
+
+
+    #introduccion{
+        @include padding;
+        padding: {
+            top: $paddingTop;
+        }
+            
+        & .introduccion__titulo{
+            @include textoTitulosDesktop;
+        }
+    
+        & .introduccion__texto{
+            @include textoArticuloDesktop;
+            padding: {
+                top:$paddingTop;
+                bottom:15px;
+            }
+        }
+    }
+
+    .ventana {
+        width:85%;
+        height: 10%;
+        & img{
+            width: 200px;
+            height: 200px;
+        }
+      }
+
+      div{
+        .navbar-nav{
+            & .menuColor{
+                @include textoMenuDesktop;
+            }
+        }    
+    } 
+
+    .fuera{
+        @include textoArticuloDesktop;
+        @include padding;
+        }
+
+        div{
+            &.pelicula{
+                padding: auto;
+                iframe{
+                    width: 350px;
+                    height: 270px;
+                }      
+            }
+        }
+    
+        .style{
+            max-width:550px; 
+            max-height:200px;
+    }
+
+    #piePagina{
+        width: 250px;
+        margin: 0px auto;
+        padding: {
+            top: 15px;
+            right: auto;
+            bottom: 15px;
+            left: auto;
+        }
+        @include textoMenuDesktop;
+        text-align: $alineacionTexto;
+        
+        &:hover{
+            animation: zoomIn 2s ease-in .2ms;
+            font-size: map-get($map: $alturaLetraDesktop, $key: texto);
+        }
+    }
+    
+ 
+ }

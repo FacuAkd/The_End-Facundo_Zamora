@@ -1,0 +1,33 @@
+@import"variables";
+
+@mixin modificadorTextoDesktop {
+    text-align: $alineacionTexto; 
+    line-height: $interlineadoDesktop;
+}
+
+@mixin textoMenuDesktop {
+    color: map-get($map: $colores, $key:menuYfooter);
+    font: {
+        family: $letra, cursive;
+        size: map-get($map: $alturaLetraDesktop, $key:menu);
+    }
+}
+
+@mixin textoTitulosDesktop{
+    color: map-get($map: $colores, $key:titulo); 
+        font: {
+            family: $letra, cursive;
+            size: map-get($map: $alturaLetraDesktop, $key:titulo);   
+        }     
+        text-align: $alineacionTexto;
+        line-height: $interlineadoDesktop;
+}
+
+@mixin textoArticuloDesktop {
+    font: {
+        family: $letra, cursive;
+        size:map-get($map: $alturaLetraDesktop, $key:texto);
+    }
+    color: map-get($map: $colores, $key:letra );
+    @include modificadorTextoDesktop;    
+}
