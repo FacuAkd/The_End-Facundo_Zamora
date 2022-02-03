@@ -1,6 +1,6 @@
 @import"mixinsMobile";
 @import"variables";
-@media (min-width: 424px) and (max-width: 450px) {
+@media (min-width: 424px) and (max-width: 766px) {
 
     #proposito{
         @include padding;

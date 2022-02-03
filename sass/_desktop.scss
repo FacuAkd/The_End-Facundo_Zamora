@@ -1,6 +1,6 @@
 @import"mixinsDesktop";
 @import"variables";
-@media (min-width: 767px) and (max-width: 900px) {
+@media (min-width: 767px) and (max-width: 1023px) {
 
     #proposito{
         @include padding;
