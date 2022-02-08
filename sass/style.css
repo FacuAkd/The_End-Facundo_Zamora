@@ -28,8 +28,8 @@ div .navbar-nav .menuColor {
 
 div .navbar-nav .menuColor:hover {
   background-color: #038C8C;
-  -webkit-animation: bounce 2s ease-in .2ms;
-          animation: bounce 2s ease-in .2ms;
+  -webkit-animation: pulse 2s ease-in .2ms;
+          animation: pulse 2s ease-in .2ms;
 }
 
 #proposito {

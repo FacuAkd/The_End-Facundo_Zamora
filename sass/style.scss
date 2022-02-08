@@ -33,7 +33,7 @@ div{
             @include textoMenu;
             &:hover{
                 background-color:map-get($map: $colores, $key:menuHover);
-                animation: bounce 2s ease-in .2ms;
+                animation: pulse 2s ease-in .2ms;
             }
         }
     }  
