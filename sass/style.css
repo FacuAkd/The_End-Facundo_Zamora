@@ -107,7 +107,7 @@ div.pelicula iframe {
 }
 
 .ventana {
-  width: 60%;
+  width: 50%;
 }
 
 .video {
@@ -160,12 +160,6 @@ div.pelicula iframe {
   font-family: "Roboto Medium 500", cursive;
   font-size: 22px;
   text-align: center;
-}
-
-#piePagina:hover {
-  -webkit-animation: zoomIn 2s ease-in .2ms;
-          animation: zoomIn 2s ease-in .2ms;
-  font-size: 22px;
 }
 
 .color {
