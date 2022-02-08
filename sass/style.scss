@@ -68,7 +68,7 @@ div{
         @include textoArticulo;
         padding: {
             top:$paddingTop;
-            bottom:15px;
+            bottom:20px;
         }
     }
 }
@@ -145,6 +145,10 @@ div{
     text-align: $alineacionTexto;
 }
 
+.formulario{
+    font-family: $letra, cursive;
+    color: map-get($map: $colores, $key:letra);
+}
 
 .color{
     color: map-get($map: $colores, $key: titulo);
