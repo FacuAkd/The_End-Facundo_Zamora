@@ -1,16 +1,16 @@
-$letra:'Calligraffitti';
+$letra:'Roboto Medium 500';
 $paddingTop:5px;
 $paddingLeft:10%;
 $paddingRight:10%;
 $alineacionTexto:center;
-$interlineado:1.5;
-$interlineadoMobile:25px;
-$interlineadoDesktop: 30px;
+$interlineado:35px;
+$interlineadoMobile:35px;
+$interlineadoDesktop:35px;
 
 $alturaLetra:(
-    menu:25px,
-    titulo:100px,
-    texto:35px,
+    menu:22px,
+    titulo:38px,
+    texto:22px,
 );
 
 $colores:(
@@ -22,13 +22,13 @@ $colores:(
 
 
 $alturaLetraMobile:(
-    menu:16px,
-    titulo:30px,
-    texto:14px,
+    menu:22px,
+    titulo:38px,
+    texto:22px,
 );
 
 $alturaLetraDesktop:(
-    menu:18px,
-    titulo:34px,
-    texto:18px,
+    menu:22px,
+    titulo:38px,
+    texto:22px,
 );

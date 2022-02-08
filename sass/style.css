@@ -22,8 +22,8 @@ div nav.menu {
 
 div .navbar-nav .menuColor {
   color: #FFD817;
-  font-family: "Calligraffitti", cursive;
-  font-size: 25px;
+  font-family: "Roboto Medium 500", cursive;
+  font-size: 22px;
 }
 
 div .navbar-nav .menuColor:hover {
@@ -35,23 +35,23 @@ div .navbar-nav .menuColor:hover {
 #proposito {
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 95px;
+  padding-top: 100px;
 }
 
 #proposito .proposito__titulo {
   color: #E8DF15;
-  font-family: "Calligraffitti", cursive;
-  font-size: 100px;
+  font-family: "Roboto Medium 500", cursive;
+  font-size: 38px;
   text-align: center;
-  line-height: 1.5;
+  line-height: 35px;
 }
 
 #proposito .proposito__texto {
-  font-family: "Calligraffitti", cursive;
-  font-size: 35px;
+  font-family: "Roboto Medium 500", cursive;
+  font-size: 22px;
   color: white;
   text-align: center;
-  line-height: 1.5;
+  line-height: 35px;
 }
 
 #introduccion {
@@ -62,38 +62,38 @@ div .navbar-nav .menuColor:hover {
 
 #introduccion .introduccion__titulo {
   color: #E8DF15;
-  font-family: "Calligraffitti", cursive;
-  font-size: 100px;
+  font-family: "Roboto Medium 500", cursive;
+  font-size: 38px;
   text-align: center;
-  line-height: 1.5;
+  line-height: 35px;
 }
 
 #introduccion .introduccion__texto {
-  font-family: "Calligraffitti", cursive;
-  font-size: 35px;
+  font-family: "Roboto Medium 500", cursive;
+  font-size: 22px;
   color: white;
   text-align: center;
-  line-height: 1.5;
+  line-height: 35px;
   padding-top: 5px;
   padding-bottom: 15px;
 }
 
 .fuera {
-  font-family: "Calligraffitti", cursive;
-  font-size: 35px;
+  font-family: "Roboto Medium 500", cursive;
+  font-size: 22px;
   color: white;
   text-align: center;
-  line-height: 1.5;
+  line-height: 35px;
   padding-left: 10%;
   padding-right: 10%;
 }
 
 .titulo_pelicula {
   color: #E8DF15;
-  font-family: "Calligraffitti", cursive;
-  font-size: 100px;
+  font-family: "Roboto Medium 500", cursive;
+  font-size: 38px;
   text-align: center;
-  line-height: 1.5;
+  line-height: 35px;
 }
 
 div.pelicula {
@@ -157,15 +157,15 @@ div.pelicula iframe {
   padding-bottom: 15px;
   padding-left: auto;
   color: #FFD817;
-  font-family: "Calligraffitti", cursive;
-  font-size: 25px;
+  font-family: "Roboto Medium 500", cursive;
+  font-size: 22px;
   text-align: center;
 }
 
 #piePagina:hover {
   -webkit-animation: zoomIn 2s ease-in .2ms;
           animation: zoomIn 2s ease-in .2ms;
-  font-size: 35px;
+  font-size: 22px;
 }
 
 .color {
@@ -180,17 +180,17 @@ div.pelicula iframe {
   }
   #proposito .proposito__titulo {
     color: #E8DF15;
-    font-family: "Calligraffitti", cursive;
-    font-size: 34px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 38px;
     text-align: center;
-    line-height: 30px;
+    line-height: 35px;
   }
   #proposito .proposito__texto {
-    font-family: "Calligraffitti", cursive;
-    font-size: 18px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 22px;
     color: white;
     text-align: center;
-    line-height: 30px;
+    line-height: 35px;
   }
   #introduccion {
     padding-left: 10%;
@@ -199,17 +199,17 @@ div.pelicula iframe {
   }
   #introduccion .introduccion__titulo {
     color: #E8DF15;
-    font-family: "Calligraffitti", cursive;
-    font-size: 34px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 38px;
     text-align: center;
-    line-height: 30px;
+    line-height: 35px;
   }
   #introduccion .introduccion__texto {
-    font-family: "Calligraffitti", cursive;
-    font-size: 18px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 22px;
     color: white;
     text-align: center;
-    line-height: 30px;
+    line-height: 35px;
     padding-top: 5px;
     padding-bottom: 15px;
   }
@@ -223,15 +223,15 @@ div.pelicula iframe {
   }
   div .navbar-nav .menuColor {
     color: #FFD817;
-    font-family: "Calligraffitti", cursive;
-    font-size: 18px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 22px;
   }
   .fuera {
-    font-family: "Calligraffitti", cursive;
-    font-size: 18px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 22px;
     color: white;
     text-align: center;
-    line-height: 30px;
+    line-height: 35px;
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -254,14 +254,14 @@ div.pelicula iframe {
     padding-bottom: 15px;
     padding-left: auto;
     color: #FFD817;
-    font-family: "Calligraffitti", cursive;
-    font-size: 18px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 22px;
     text-align: center;
   }
   #piePagina:hover {
     -webkit-animation: zoomIn 2s ease-in .2ms;
             animation: zoomIn 2s ease-in .2ms;
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
@@ -273,17 +273,17 @@ div.pelicula iframe {
   }
   #proposito .proposito__titulo {
     color: #E8DF15;
-    font-family: "Calligraffitti", cursive;
-    font-size: 30px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 38px;
     text-align: center;
-    line-height: 25px;
+    line-height: 35px;
   }
   #proposito .proposito__texto {
-    font-family: "Calligraffitti", cursive;
-    font-size: 14px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 22px;
     color: white;
     text-align: center;
-    line-height: 25px;
+    line-height: 35px;
   }
   #introduccion {
     padding-left: 10%;
@@ -292,17 +292,17 @@ div.pelicula iframe {
   }
   #introduccion .introduccion__titulo {
     color: #E8DF15;
-    font-family: "Calligraffitti", cursive;
-    font-size: 30px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 38px;
     text-align: center;
-    line-height: 25px;
+    line-height: 35px;
   }
   #introduccion .introduccion__texto {
-    font-family: "Calligraffitti", cursive;
-    font-size: 14px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 22px;
     color: white;
     text-align: center;
-    line-height: 25px;
+    line-height: 35px;
     padding-top: 5px;
     padding-bottom: 15px;
   }
@@ -316,15 +316,15 @@ div.pelicula iframe {
   }
   div .navbar-nav .menuColor {
     color: #FFD817;
-    font-family: "Calligraffitti", cursive;
-    font-size: 16px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 22px;
   }
   .fuera {
-    font-family: "Calligraffitti", cursive;
-    font-size: 14px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 22px;
     color: white;
     text-align: center;
-    line-height: 25px;
+    line-height: 35px;
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -347,14 +347,14 @@ div.pelicula iframe {
     padding-bottom: 15px;
     padding-left: auto;
     color: #FFD817;
-    font-family: "Calligraffitti", cursive;
-    font-size: 16px;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 22px;
     text-align: center;
   }
   #piePagina:hover {
     -webkit-animation: zoomIn 2s ease-in .2ms;
             animation: zoomIn 2s ease-in .2ms;
-    font-size: 14px;
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=style.css.map */
