@@ -37,14 +37,6 @@
         }
     }
 
-    .ventana {
-        width:85%;
-        height: 10%;
-        & img{
-            width: 200px;
-            height: 200px;
-        }
-      }
 
       div{
         .navbar-nav{
@@ -59,15 +51,6 @@
         @include padding;
         }
 
-        div{
-            &.pelicula{
-                padding: auto;
-                iframe{
-                    width: 350px;
-                    height: 270px;
-                }      
-            }
-        }
     
         .style{
             max-width:550px; 

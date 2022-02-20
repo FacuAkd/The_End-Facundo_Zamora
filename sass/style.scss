@@ -82,24 +82,9 @@ div{
         @include textoTitulos;
     }
 
-    div{
-
-        &.pelicula{
-            @include padding;
-            display: inline;
-        
-            iframe{
-                width: 560px;
-            }      
-        }
-    }
 
 .ventana{
-    width: 50%;
-}
-
-.video{
-    width: 500px;
+    width: 75%;
     margin: 15px auto;
 }
 

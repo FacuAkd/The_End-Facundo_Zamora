@@ -96,22 +96,8 @@ div .navbar-nav .menuColor:hover {
   line-height: 35px;
 }
 
-div.pelicula {
-  padding-left: 10%;
-  padding-right: 10%;
-  display: inline;
-}
-
-div.pelicula iframe {
-  width: 560px;
-}
-
 .ventana {
-  width: 50%;
-}
-
-.video {
-  width: 500px;
+  width: 75%;
   margin: 15px auto;
 }
 
@@ -212,14 +198,6 @@ div.pelicula iframe {
     padding-top: 5px;
     padding-bottom: 15px;
   }
-  .ventana {
-    width: 85%;
-    height: 10%;
-  }
-  .ventana img {
-    width: 200px;
-    height: 200px;
-  }
   div .navbar-nav .menuColor {
     color: #FFD817;
     font-family: "Roboto Medium 500", cursive;
@@ -233,13 +211,6 @@ div.pelicula iframe {
     line-height: 35px;
     padding-left: 10%;
     padding-right: 10%;
-  }
-  div.pelicula {
-    padding: auto;
-  }
-  div.pelicula iframe {
-    width: 350px;
-    height: 270px;
   }
   .style {
     max-width: 550px;
@@ -305,14 +276,6 @@ div.pelicula iframe {
     padding-top: 5px;
     padding-bottom: 15px;
   }
-  .ventana {
-    width: 85%;
-    height: 10%;
-  }
-  .ventana img {
-    width: 200px;
-    height: 200px;
-  }
   div .navbar-nav .menuColor {
     color: #FFD817;
     font-family: "Roboto Medium 500", cursive;
@@ -326,13 +289,6 @@ div.pelicula iframe {
     line-height: 35px;
     padding-left: 10%;
     padding-right: 10%;
-  }
-  div.pelicula {
-    padding: auto;
-  }
-  div.pelicula iframe {
-    width: 350px;
-    height: 270px;
   }
   .style {
     max-width: 250px;
