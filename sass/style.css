@@ -114,7 +114,13 @@ div .navbar-nav .menuColor:hover {
 
 .style {
   max-width: 75%;
-  max-height: 400px;
+  max-height: 312px;
+}
+
+.posicion {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 #redes {
