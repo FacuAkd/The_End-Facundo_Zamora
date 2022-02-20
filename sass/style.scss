@@ -141,6 +141,7 @@ div{
 .color{
     color: map-get($map: $colores, $key: titulo);
 }
+@import"redes";
 @import"desktop";
 @import"mobile";
 
