@@ -108,14 +108,12 @@ div{
     top: 0;
 }
 
-#redes{
-    margin: {
-        top: 30px;
-        bottom: 30px;
-    }
+#redes{    
+    position: fixed;
+    top: 50%;
+    left: 0;
     display: flex;
-    justify-content: space-evenly;
-
+    flex-direction: column;
     & :hover{
         animation: flip;
         animation-duration: 1s;
