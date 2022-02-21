@@ -78,6 +78,26 @@ div .navbar-nav .menuColor:hover {
   padding-bottom: 20px;
 }
 
+.pelicula {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pelicula hr {
+  width: 75%;
+  margin: 15px auto;
+  border: 5px solid #737375c5;
+  border-radius: 200px /8px;
+}
+
+.pelicula .titulo__pelicula {
+  color: #E8DF15;
+  font-family: "Roboto Medium 500", cursive;
+  font-size: 38px;
+  text-align: center;
+  line-height: 35px;
+}
+
 .fuera {
   font-family: "Roboto Medium 500", cursive;
   font-size: 22px;
@@ -107,14 +127,12 @@ div .navbar-nav .menuColor:hover {
 }
 
 .fondo {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(grey));
-  background: linear-gradient(black, grey);
-  overflow: auto;
+  background-image: url(../imagen/fondoPatron2.png);
 }
 
 .style {
   max-width: 75%;
-  max-height: 312px;
+  max-height: 322px;
 }
 
 .posicion {
@@ -123,33 +141,10 @@ div .navbar-nav .menuColor:hover {
   top: 0;
 }
 
-#redes {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#redes :hover {
-  -webkit-animation: flip;
-          animation: flip;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
 #piePagina {
   width: 100%;
-  margin: 0px auto;
-  padding-top: 15px;
-  padding-right: auto;
-  padding-bottom: 15px;
-  padding-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #FFD817;
   font-family: "Roboto Medium 500", cursive;
   font-size: 22px;
@@ -157,12 +152,20 @@ div .navbar-nav .menuColor:hover {
 }
 
 .formulario {
-  font-family: "Roboto Medium 500", cursive;
+  font-family: "Roboto Medium 500", cursive, cursive;
   color: white;
 }
 
 .color {
   color: #E8DF15;
+}
+
+.tarjeta {
+  color: white;
+  font-family: "Roboto Medium 500", cursive;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
 }
 
 .social-bar {
@@ -203,7 +206,8 @@ div .navbar-nav .menuColor:hover {
 }
 
 .icon-instagram {
-  background: #b83720;
+  background: -webkit-gradient(linear, left top, left bottom, from(blue), color-stop(red), to(orange));
+  background: linear-gradient(blue, red, orange);
 }
 
 .icon-github {
@@ -225,7 +229,7 @@ div .navbar-nav .menuColor:hover {
           box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
 }
 
-@media (min-width: 767px) and (max-width: 1023px) {
+@media (min-width: 500px) and (max-width: 1023px) {
   #proposito {
     padding-left: 10%;
     padding-right: 10%;
@@ -282,28 +286,19 @@ div .navbar-nav .menuColor:hover {
   }
   .style {
     max-width: 550px;
-    max-height: 200px;
+    max-height: 180px;
+    overflow: auto;
   }
   #piePagina {
-    width: 250px;
-    margin: 0px auto;
-    padding-top: 15px;
-    padding-right: auto;
-    padding-bottom: 15px;
-    padding-left: auto;
+    width: 100%;
     color: #FFD817;
     font-family: "Roboto Medium 500", cursive;
     font-size: 22px;
     text-align: center;
   }
-  #piePagina:hover {
-    -webkit-animation: zoomIn 2s ease-in .2ms;
-            animation: zoomIn 2s ease-in .2ms;
-    font-size: 22px;
-  }
 }
 
-@media (min-width: 424px) and (max-width: 766px) {
+@media (min-width: 250px) and (max-width: 426px) {
   #proposito {
     padding-left: 10%;
     padding-right: 10%;
@@ -312,16 +307,16 @@ div .navbar-nav .menuColor:hover {
   #proposito .proposito__titulo {
     color: #E8DF15;
     font-family: "Roboto Medium 500", cursive;
-    font-size: 38px;
+    font-size: 1.5rem;
     text-align: center;
-    line-height: 35px;
+    line-height: 32px;
   }
   #proposito .proposito__texto {
     font-family: "Roboto Medium 500", cursive;
-    font-size: 22px;
+    font-size: 1rem;
     color: white;
     text-align: center;
-    line-height: 35px;
+    line-height: 32px;
   }
   #introduccion {
     padding-left: 10%;
@@ -331,53 +326,58 @@ div .navbar-nav .menuColor:hover {
   #introduccion .introduccion__titulo {
     color: #E8DF15;
     font-family: "Roboto Medium 500", cursive;
-    font-size: 38px;
+    font-size: 1.5rem;
     text-align: center;
-    line-height: 35px;
+    line-height: 32px;
   }
   #introduccion .introduccion__texto {
     font-family: "Roboto Medium 500", cursive;
-    font-size: 22px;
+    font-size: 1rem;
     color: white;
     text-align: center;
-    line-height: 35px;
+    line-height: 32px;
     padding-top: 5px;
     padding-bottom: 15px;
   }
   div .navbar-nav .menuColor {
     color: #FFD817;
     font-family: "Roboto Medium 500", cursive;
-    font-size: 22px;
+    font-size: 1rem;
   }
   .fuera {
     font-family: "Roboto Medium 500", cursive;
-    font-size: 22px;
+    font-size: 1rem;
     color: white;
     text-align: center;
-    line-height: 35px;
+    line-height: 32px;
     padding-left: 10%;
     padding-right: 10%;
   }
   .style {
-    max-width: 250px;
-    max-height: 240px;
+    max-width: 280px;
+    max-height: 250px;
+    overflow: auto;
   }
   #piePagina {
-    width: 250px;
-    margin: 0px auto;
-    padding-top: 15px;
-    padding-right: auto;
-    padding-bottom: 15px;
-    padding-left: auto;
+    width: 85%;
     color: #FFD817;
     font-family: "Roboto Medium 500", cursive;
-    font-size: 22px;
+    font-size: 1rem;
     text-align: center;
   }
-  #piePagina:hover {
-    -webkit-animation: zoomIn 2s ease-in .2ms;
-            animation: zoomIn 2s ease-in .2ms;
-    font-size: 22px;
+  .icon {
+    color: white;
+    text-decoration: none;
+    padding: .3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .cuadro {
+    width: 300px;
+    height: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */

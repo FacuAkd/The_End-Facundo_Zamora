@@ -8,7 +8,7 @@
 @mixin textoMenuDesktop {
     color: map-get($map: $colores, $key:menuYfooter);
     font: {
-        family: $letra, cursive;
+        family: $letra;
         size: map-get($map: $alturaLetraDesktop, $key:menu);
     }
 }
@@ -16,7 +16,7 @@
 @mixin textoTitulosDesktop{
     color: map-get($map: $colores, $key:titulo); 
         font: {
-            family: $letra, cursive;
+            family: $letra;
             size: map-get($map: $alturaLetraDesktop, $key:titulo);   
         }     
         text-align: $alineacionTexto;
@@ -25,7 +25,7 @@
 
 @mixin textoArticuloDesktop {
     font: {
-        family: $letra, cursive;
+        family: $letra;
         size:map-get($map: $alturaLetraDesktop, $key:texto);
     }
     color: map-get($map: $colores, $key:letra );

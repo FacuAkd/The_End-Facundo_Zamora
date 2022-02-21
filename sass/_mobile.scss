@@ -1,6 +1,6 @@
 @import"mixinsMobile";
 @import"variables";
-@media (min-width: 424px) and (max-width: 766px) {
+@media (min-width: 250px) and (max-width: 426px) {
 
     #proposito{
         @include padding;
@@ -52,27 +52,27 @@
 
      
     .style{
-            max-width:250px; 
-            max-height:240px;
+            max-width:280px; 
+            max-height:250px;
+            overflow: auto;
     }
 
     #piePagina{
-        width: 250px;
-        margin: 0px auto;
-        padding: {
-            top: 15px;
-            right: auto;
-            bottom: 15px;
-            left: auto;
-        }
+        width: 85%;
         @include textoMenuMobile;
         text-align: $alineacionTexto;
-        
-        &:hover{
-            animation: zoomIn 2s ease-in .2ms;
-            font-size: map-get($map: $alturaLetraMobile, $key: texto);
-        }
+    } 
+
+    .icon {
+        color: white;
+        text-decoration: none;
+        padding: .3rem;
+        display: flex;
+        transition: all .5s;
     }
-    
- 
+
+    .cuadro{
+        width:300px; 
+        height:250px;    
+    }
  }

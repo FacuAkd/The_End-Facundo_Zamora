@@ -13,7 +13,7 @@
 @mixin textoMenu {
     color: map-get($map: $colores, $key:menuYfooter);
     font: {
-        family: $letra, cursive;
+        family: $letra;
         size: map-get($map: $alturaLetra, $key:menu);
     }
 }
@@ -21,7 +21,7 @@
 @mixin textoTitulos {
     color: map-get($map: $colores, $key:titulo); 
         font: {
-            family: $letra, cursive;
+            family: $letra;
             size: map-get($map: $alturaLetra, $key:titulo);   
         }     
         text-align: $alineacionTexto;
@@ -30,7 +30,7 @@
 
 @mixin textoArticulo {
     font: {
-        family: $letra, cursive;
+        family: $letra;
         size:map-get($map: $alturaLetra, $key:texto);
     }
     color: map-get($map: $colores, $key:letra );

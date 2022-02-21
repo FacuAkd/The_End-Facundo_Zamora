@@ -1,10 +1,10 @@
-$letra:'Roboto Medium 500';
+$letra:'Roboto Medium 500',cursive;
 $paddingTop:5px;
 $paddingLeft:10%;
 $paddingRight:10%;
 $alineacionTexto:center;
 $interlineado:35px;
-$interlineadoMobile:35px;
+$interlineadoMobile:32px;
 $interlineadoDesktop:35px;
 
 $alturaLetra:(
@@ -22,9 +22,9 @@ $colores:(
 
 
 $alturaLetraMobile:(
-    menu:22px,
-    titulo:38px,
-    texto:22px,
+    menu:1rem,
+    titulo:1.5rem,
+    texto:1rem,
 );
 
 $alturaLetraDesktop:(

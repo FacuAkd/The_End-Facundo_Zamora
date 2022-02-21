@@ -22,7 +22,6 @@
     nav{
         &.menu{
             background-image: url(../imagen/fondoPatron.png);
-
         }
     }
 }
@@ -73,6 +72,22 @@ div{
     }
 }
 
+.pelicula{
+    margin: {
+        top:30px;
+        bottom:30px;
+    }
+    & hr {
+            width: 75%;
+            margin: 15px auto;        
+            border: 5px solid #737375c5;
+            border-radius: 200px /8px;
+          }
+    & .titulo__pelicula{
+        @include textoTitulos;
+    }
+}
+
 .fuera{
     @include textoArticulo;
     @include padding;
@@ -94,13 +109,12 @@ div{
 }
 
 .fondo{
-        background: linear-gradient(black,grey);
-        overflow:auto;
+    background-image: url(../imagen/fondoPatron2.png);
 }
 
 .style{
         max-width:75%; 
-        max-height:312px;
+        max-height:322px;
 }
 
 .posicion{
@@ -108,27 +122,10 @@ div{
     top: 0;
 }
 
-#redes{    
-    position: fixed;
-    top: 50%;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    & :hover{
-        animation: flip;
-        animation-duration: 1s;
-    }
-}
-
 #piePagina{
     width: 100%;
-    margin: 0px auto;
-    padding: {
-        top: 15px;
-        right: auto;
-        bottom: 15px;
-        left: auto;
-    }
+    margin-top: 20px;
+    margin-bottom: 20px;
     @include textoMenu;
     text-align: $alineacionTexto;
 }
@@ -141,6 +138,16 @@ div{
 .color{
     color: map-get($map: $colores, $key: titulo);
 }
+
+.tarjeta{
+    color: white;
+    font-family: $letra;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+}
+
+
 @import"redes";
 @import"desktop";
 @import"mobile";
