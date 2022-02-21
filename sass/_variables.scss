@@ -4,7 +4,7 @@ $paddingLeft:10%;
 $paddingRight:10%;
 $alineacionTexto:center;
 $interlineado:35px;
-$interlineadoMobile:32px;
+$interlineadoMobile:22px;
 $interlineadoDesktop:35px;
 
 $alturaLetra:(
@@ -22,13 +22,13 @@ $colores:(
 
 
 $alturaLetraMobile:(
-    menu:1rem,
-    titulo:1.5rem,
-    texto:1rem,
+    menu:12px,
+    titulo:26px,
+    texto:12px,
 );
 
 $alturaLetraDesktop:(
     menu:22px,
-    titulo:38px,
+    titulo:30px,
     texto:22px,
 );

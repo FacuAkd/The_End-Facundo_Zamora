@@ -238,7 +238,7 @@ div .navbar-nav .menuColor:hover {
   #proposito .proposito__titulo {
     color: #E8DF15;
     font-family: "Roboto Medium 500", cursive;
-    font-size: 38px;
+    font-size: 30px;
     text-align: center;
     line-height: 35px;
   }
@@ -257,7 +257,7 @@ div .navbar-nav .menuColor:hover {
   #introduccion .introduccion__titulo {
     color: #E8DF15;
     font-family: "Roboto Medium 500", cursive;
-    font-size: 38px;
+    font-size: 30px;
     text-align: center;
     line-height: 35px;
   }
@@ -298,7 +298,7 @@ div .navbar-nav .menuColor:hover {
   }
 }
 
-@media (min-width: 250px) and (max-width: 426px) {
+@media (min-width: 250px) and (max-width: 425px) {
   #proposito {
     padding-left: 10%;
     padding-right: 10%;
@@ -307,16 +307,16 @@ div .navbar-nav .menuColor:hover {
   #proposito .proposito__titulo {
     color: #E8DF15;
     font-family: "Roboto Medium 500", cursive;
-    font-size: 1.5rem;
+    font-size: 26px;
     text-align: center;
-    line-height: 32px;
+    line-height: 22px;
   }
   #proposito .proposito__texto {
     font-family: "Roboto Medium 500", cursive;
-    font-size: 1rem;
+    font-size: 12px;
     color: white;
     text-align: center;
-    line-height: 32px;
+    line-height: 22px;
   }
   #introduccion {
     padding-left: 10%;
@@ -326,43 +326,44 @@ div .navbar-nav .menuColor:hover {
   #introduccion .introduccion__titulo {
     color: #E8DF15;
     font-family: "Roboto Medium 500", cursive;
-    font-size: 1.5rem;
+    font-size: 26px;
     text-align: center;
-    line-height: 32px;
+    line-height: 22px;
   }
   #introduccion .introduccion__texto {
     font-family: "Roboto Medium 500", cursive;
-    font-size: 1rem;
+    font-size: 12px;
     color: white;
     text-align: center;
-    line-height: 32px;
+    line-height: 22px;
     padding-top: 5px;
     padding-bottom: 15px;
   }
   div .navbar-nav .menuColor {
     color: #FFD817;
     font-family: "Roboto Medium 500", cursive;
-    font-size: 1rem;
+    font-size: 12px;
   }
   .fuera {
     font-family: "Roboto Medium 500", cursive;
-    font-size: 1rem;
+    font-size: 12px;
     color: white;
     text-align: center;
-    line-height: 32px;
+    line-height: 22px;
     padding-left: 10%;
     padding-right: 10%;
   }
   .style {
     max-width: 280px;
-    max-height: 250px;
+    max-height: 330px;
     overflow: auto;
   }
   #piePagina {
-    width: 85%;
+    margin: 15px auto;
+    width: 75%;
     color: #FFD817;
     font-family: "Roboto Medium 500", cursive;
-    font-size: 1rem;
+    font-size: 12px;
     text-align: center;
   }
   .icon {
@@ -378,6 +379,18 @@ div .navbar-nav .menuColor:hover {
   .cuadro {
     width: 300px;
     height: 250px;
+  }
+  .pelicula .titulo__pelicula {
+    color: #E8DF15;
+    font-family: "Roboto Medium 500", cursive;
+    font-size: 26px;
+    text-align: center;
+    line-height: 22px;
+  }
+  .formulario {
+    font-family: "Roboto Medium 500", cursive, cursive;
+    color: white;
+    font-size: 0.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

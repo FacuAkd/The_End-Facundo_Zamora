@@ -1,6 +1,6 @@
 @import"mixinsMobile";
 @import"variables";
-@media (min-width: 250px) and (max-width: 426px) {
+@media (min-width: 250px) and (max-width: 425px) {
 
     #proposito{
         @include padding;
@@ -53,12 +53,13 @@
      
     .style{
             max-width:280px; 
-            max-height:250px;
+            max-height:330px;
             overflow: auto;
     }
 
     #piePagina{
-        width: 85%;
+        margin: 15px auto;
+        width: 75%;
         @include textoMenuMobile;
         text-align: $alineacionTexto;
     } 
@@ -74,5 +75,17 @@
     .cuadro{
         width:300px; 
         height:250px;    
+    }
+
+    .pelicula{
+        & .titulo__pelicula{
+            @include textoTitulosMobile;
+        }
+    }
+
+    .formulario{
+        font-family: $letra, cursive;
+        color: map-get($map: $colores, $key:letra);
+        font-size: 0.5rem;
     }
  }
