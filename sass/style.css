@@ -133,6 +133,7 @@ div .navbar-nav .menuColor:hover {
 .style {
   max-width: 75%;
   max-height: 322px;
+  overflow: auto;
 }
 
 .posicion {
@@ -229,7 +230,7 @@ div .navbar-nav .menuColor:hover {
           box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
 }
 
-@media (min-width: 500px) and (max-width: 1023px) {
+@media (min-width: 767px) and (max-width: 1023px) {
   #proposito {
     padding-left: 10%;
     padding-right: 10%;
@@ -284,11 +285,6 @@ div .navbar-nav .menuColor:hover {
     padding-left: 10%;
     padding-right: 10%;
   }
-  .style {
-    max-width: 550px;
-    max-height: 180px;
-    overflow: auto;
-  }
   #piePagina {
     width: 100%;
     color: #FFD817;
@@ -298,7 +294,15 @@ div .navbar-nav .menuColor:hover {
   }
 }
 
-@media (min-width: 250px) and (max-width: 425px) {
+@media (min-width: 426px) and (max-width: 766.9px) {
+  .style {
+    max-width: 200px;
+    max-height: 400px;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 426px) {
   #proposito {
     padding-left: 10%;
     padding-right: 10%;
