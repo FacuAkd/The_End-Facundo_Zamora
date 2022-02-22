@@ -57,13 +57,29 @@
         text-align: $alineacionTexto;
         
     }
-    
+    .style{
+        max-height:330px;
+        overflow: auto;
+    }
+
+    .formulario{
+        font-family: $letra, cursive;
+        color: map-get($map: $colores, $key:letra);
+        font-size: 75%;
+    }
+
  }
 
- @media (min-width: 426px) and (max-width: 766.9px){
+ @media (min-width: 426px) and (max-width: 767px){
     .style{
-        max-width:200px; 
-        max-height:200px;
+        max-width:280px; 
+        max-height:265px;
         overflow: auto;
-}
+    }   
+
+    .formulario{
+        font-family: $letra, cursive;
+        color: map-get($map: $colores, $key:letra);
+        font-size: 75%;
+    }
  }

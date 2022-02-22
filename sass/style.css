@@ -54,6 +54,10 @@ div .navbar-nav .menuColor:hover {
   line-height: 35px;
 }
 
+#proposito .proposito__texto a {
+  text-decoration: none;
+}
+
 #introduccion {
   padding-left: 10%;
   padding-right: 10%;
@@ -96,6 +100,10 @@ div .navbar-nav .menuColor:hover {
   font-size: 38px;
   text-align: center;
   line-height: 35px;
+}
+
+.pelicula a {
+  text-decoration: none;
 }
 
 .fuera {
@@ -155,6 +163,7 @@ div .navbar-nav .menuColor:hover {
 .formulario {
   font-family: "Roboto Medium 500", cursive, cursive;
   color: white;
+  font-size: 75%;
 }
 
 .color {
@@ -292,13 +301,27 @@ div .navbar-nav .menuColor:hover {
     font-size: 22px;
     text-align: center;
   }
+  .style {
+    max-height: 330px;
+    overflow: auto;
+  }
+  .formulario {
+    font-family: "Roboto Medium 500", cursive, cursive;
+    color: white;
+    font-size: 75%;
+  }
 }
 
-@media (min-width: 426px) and (max-width: 766.9px) {
+@media (min-width: 426px) and (max-width: 767px) {
   .style {
-    max-width: 200px;
-    max-height: 400px;
+    max-width: 280px;
+    max-height: 265px;
     overflow: auto;
+  }
+  .formulario {
+    font-family: "Roboto Medium 500", cursive, cursive;
+    color: white;
+    font-size: 75%;
   }
 }
 
