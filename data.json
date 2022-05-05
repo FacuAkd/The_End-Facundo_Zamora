@@ -1,0 +1,67 @@
+[
+    {
+        "nombre":"celda1",
+        "id":1,
+        "marca": "The Beatles",
+        "precio":500
+    },
+
+    {
+        "nombre":"celda2",
+        "id":2,
+        "marca": "The Beatles",
+        "precio":550
+    },
+
+    {   
+        "nombre":"celda3",
+        "id":3,
+        "marca": "The Beatles",
+        "precio":450
+    },
+
+    {
+        "nombre":"celda4",
+        "id":4,
+        "marca": "The Beatles",
+        "precio":750
+    },
+
+
+    {
+        "nombre":"celda5",
+        "id":5,
+        "marca": "The Beatles",
+        "precio":850
+    },
+
+    {
+        "nombre":"celda6",
+        "id":6,
+        "marca": "The Beatles",
+        "precio":950
+    },
+
+    {
+        "nombre":"celda7",
+        "id":7,
+        "marca": "The Beatles",
+        "precio":1000
+    },
+
+    {
+        "nombre":"celda8",
+        "id":8,
+        "marca": "The Beatles",
+        "precio":1550
+    },
+
+    
+
+    {
+        "nombre":"celda9",
+        "id":9,
+        "marca": "The Beatles",
+        "precio":2250
+    }
+]
