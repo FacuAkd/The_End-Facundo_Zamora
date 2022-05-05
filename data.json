@@ -56,12 +56,31 @@
         "precio":1550
     },
 
-    
-
     {
         "nombre":"celda9",
         "id":9,
         "marca": "The Beatles",
         "precio":2250
+    },
+
+    {
+        "nombre":"celda8",
+        "id":10,
+        "marca": "The Beatles",
+        "precio":3000
+    },
+
+    {
+        "nombre":"celda8",
+        "id":11,
+        "marca": "The Beatles",
+        "precio":3250
+    },
+
+    {
+        "nombre":"celda8",
+        "id":12,
+        "marca": "The Beatles",
+        "precio":3500
     }
 ]

@@ -7,7 +7,7 @@ class Celdas{
     }
 }
 
-fetch('/data.json')
+fetch('../data.json')
     .then((res) => res.json())
     .then(data => {
         console.log(data);
@@ -35,13 +35,22 @@ function notificacion(){
 
 function VentanaAlerta(){
     Swal.fire({
-        icon: 'success',
         title: 'Carrito',
+        text: "El total de su compra es $"+ resultado,
+        icon: 'success',
         showCancelButton: true,
-        text: "El total de la compra es de $"+ resultado,
-        confirmButtonText: "Continuar",
-        cancelButtonText: "Cancelar"
-    });
+        confirmButtonColor: '#d33',
+        cancelButtonColor:'#3085d6' ,
+        cancelButtonText: "Comprar",
+        confirmButtonText: 'Vaciar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            resultado=0;
+          Swal.fire(
+            'Se Vacio el Carrito',
+          )
+        }
+      })
 }
 
 let resultado=0;
@@ -81,29 +90,24 @@ precioCeldas[8].onclick=()=> {resultado+=data[8].precio;
     seleccionados.push(data[8].nombre);
     notificacion();
 }
-
+precioCeldas[9].onclick=()=> {resultado+=data[8].precio;
+    seleccionados.push(data[9].nombre);
+    notificacion();
+}
+precioCeldas[10].onclick=()=> {resultado+=data[8].precio;
+    seleccionados.push(data[10].nombre);
+    notificacion();
+}
+precioCeldas[11].onclick=()=> {resultado+=data[8].precio;
+    seleccionados.push(data[11].nombre);
+    notificacion();
+}
 let botonTotal= document.getElementById("totalbtn");
 let botonCompra= document.getElementById("comprabtn");
 
 let mostrarTotal= document.getElementsByClassName("total");
 mostrarTotal= document.createElement("p");
 
-/*botonTotal.onclick=()=> {
-    mostrarTotal.innerHTML= "El total de la compra es $"+ resultado;
-    document.body.append(mostrarTotal);
-    sessionStorage.setItem(`Total`, resultado);
-    guardar();
-}*/
-
-let botonReset= document.getElementById("reset");
-botonReset.onclick=()=>{
-    resultado=0;
-    mostrarTotal.innerHTML= "El total de la compra es $"+ resultado;
-    sessionStorage.setItem(`Total`, resultado);
-    let ultimo= seleccionados.length;
-    seleccionados.splice(0,ultimo);
-    guardar();    
-}
 
 const guardarArray = (clave, valor) => {localStorage.setItem(clave, valor)};
 guardarArray("listaDeCeldas", JSON.stringify(data));
